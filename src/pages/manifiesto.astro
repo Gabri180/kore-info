@@ -1,0 +1,270 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Manifiesto" description="El manifiesto de propiedad de Kore.">
+  <Nav current="/manifiesto" />
+
+  <header class="manifesto-hero">
+    <div class="section" style="padding-top:140px; padding-bottom:80px">
+      <p class="label">03 — Manifiesto</p>
+      <div class="divider"></div>
+      <h1>Manifiesto<br/><em>de Propiedad.</em></h1>
+      <p class="hero-meta label">Versión 1.0 — Documento fundacional de Kore</p>
+    </div>
+  </header>
+
+  <main>
+    <article class="manifesto-body">
+
+      <section class="m-chapter">
+        <div class="m-label label">I — El diagnóstico</div>
+        <div class="m-text">
+          <p class="m-lead">El smartphone en tu bolsillo sabe más de ti que cualquier persona en tu vida.</p>
+          <p>Sabe dónde duermes. Sabe con quién hablas. Sabe qué buscas a las 2 de la mañana. Sabe cuánto dinero tienes en el banco. Sabe qué te preocupa. Sabe qué deseas.</p>
+          <p>Y no es tuyo.</p>
+          <p>No nos referimos a que alguien robó tu teléfono. Nos referimos a algo más profundo y más difícil de ver: el dispositivo que pagaste, que llevas encima, que usas para lo más íntimo de tu vida, no te pertenece en ningún sentido real de la palabra.</p>
+        </div>
+      </section>
+
+      <section class="m-chapter accent">
+        <div class="m-label label">II — La prueba</div>
+        <div class="m-text">
+          <p class="m-lead">Este dispositivo fue diseñado para ser propiedad de su fabricante durante 18 meses.</p>
+          <p>Fue diseñado para que solo ellos puedan repararlo. Fue diseñado para enviar tus datos a servidores que no controlas. Fue diseñado para que sea caro de abandonar.</p>
+          <p>El contrato que firmaste cuando lo encendiste por primera vez —los Términos y Condiciones que nadie lee— te convierte en inquilino del hardware que pagaste. El propietario real puede actualizar el software para eliminar funciones. Puede desactivar el dispositivo remotamente. Puede cambiar las condiciones de uso en cualquier momento.</p>
+          <p>Esto no es conspiración. Está escrito en los contratos. Lo hiciste legal al pulsar "Acepto".</p>
+        </div>
+      </section>
+
+      <section class="m-chapter">
+        <div class="m-label label">III — La industria</div>
+        <div class="m-text">
+          <p class="m-lead">El modelo de negocio moderno del smartphone no es venderte hardware. Es venderte a ti.</p>
+          <p>Los datos que genera tu teléfono tienen un valor de mercado. Tus patrones de movimiento, tus hábitos de compra, tu historial de búsqueda, tus contactos, tu estado de ánimo inferido del teclado que usas. Todo tiene precio. Todo se vende.</p>
+          <p>El hardware barato —o subvencionado— es el anzuelo. Tú eres el producto que se vende a anunciantes, aseguradoras, gobiernos y actores cuya identidad nunca conocerás.</p>
+          <p>No estamos diciendo que tu fabricante es malicioso. Estamos diciendo que el sistema funciona exactamente como fue diseñado, y que tú y tu intimidad sois la mercancía.</p>
+        </div>
+      </section>
+
+      <div class="m-divider-full">
+        <span class="label">Una pausa para la honestidad</span>
+      </div>
+
+      <section class="m-chapter">
+        <div class="m-label label">IV — Lo que no somos</div>
+        <div class="m-text">
+          <p class="m-lead">Kore no es el smartphone más barato.</p>
+          <p>No tiene el ecosistema de aplicaciones más grande. No tiene la cámara más impresionante en papel. No viene con un asistente de voz que escucha todo lo que dices para "mejorar tu experiencia".</p>
+          <p>Somos honestos sobre esto porque la deshonestidad en el marketing tecnológico es uno de los síntomas del problema que estamos intentando resolver. Si mintieramos sobre las especificaciones, no seríamos mejores que los que criticamos.</p>
+          <p>Lo que Kore tiene es algo que ningún fabricante grande puede ofrecerte, porque ofrecértelo destruiría su modelo de negocio.</p>
+        </div>
+      </section>
+
+      <section class="m-chapter accent-dark">
+        <div class="m-label label">V — Lo que somos</div>
+        <div class="m-text">
+          <p class="m-lead">Kore es el único smartphone que, cuando lo compras, es completamente tuyo.</p>
+
+          <div class="m-list">
+            <div class="ml-item">
+              <span class="ml-icon amber">—</span>
+              <div>
+                <strong>Tuyo en el hardware.</strong> Titanio Grade 5, mecanizado en una sola pieza, sin costuras. Diseñado para ser reparado por sus propietarios. No por nosotros. Por ti.
+              </div>
+            </div>
+            <div class="ml-item">
+              <span class="ml-icon amber">—</span>
+              <div>
+                <strong>Tuyo en el software.</strong> KoreOS no envía ningún dato a ningún servidor externo. No hay telemetría. No hay análisis de uso. El código es auditable. La privacidad no es una característica: es la arquitectura.
+              </div>
+            </div>
+            <div class="ml-item">
+              <span class="ml-icon amber">—</span>
+              <div>
+                <strong>Tuyo en el control.</strong> Kill switch físico. No es un ajuste de software que un exploit puede revertir. Es un circuito que se abre físicamente cuando cortas la radio, la cámara o el micrófono.
+              </div>
+            </div>
+            <div class="ml-item">
+              <span class="ml-icon amber">—</span>
+              <div>
+                <strong>Tuyo en el tiempo.</strong> 7 años de actualizaciones garantizadas. El doble que el estándar de la industria. Porque un objeto que te pertenece debería durar más que el ciclo de ventas de su fabricante.
+              </div>
+            </div>
+            <div class="ml-item">
+              <span class="ml-icon amber">—</span>
+              <div>
+                <strong>Tuyo en la identidad.</strong> Número de serie grabado en el titanio. Certificado de propiedad individual. 1.000 unidades que confirman que este objeto específico, en el mundo, es tuyo.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-chapter">
+        <div class="m-label label">VI — El número</div>
+        <div class="m-text">
+          <p class="m-lead">1.000 unidades. No más. Nunca.</p>
+          <p>Este número no es una táctica de marketing. Es un límite estructural que nos hemos impuesto y que no podemos incumplir sin destruir lo que somos.</p>
+          <p>Por encima de cierto volumen, la propiedad se diluye. La relación directa entre fabricante y propietario se vuelve imposible. Los compromisos se convierten en aspiraciones. Las aspiraciones se convierten en marketing.</p>
+          <p>1.000 personas. 1.000 contratos de propiedad real. 1.000 objetos fabricados con el mismo nivel de atención al primero que al último.</p>
+          <p>Cuando el número llegue a 1.000, cerraremos la lista. Para siempre.</p>
+        </div>
+      </section>
+
+      <section class="m-chapter accent">
+        <div class="m-label label">VII — A quién va dirigido</div>
+        <div class="m-text">
+          <p class="m-lead">Kore no es para todo el mundo. Eso también es parte del diseño.</p>
+          <p>Es para personas que han llegado a un punto de su vida en el que prefieren la permanencia sobre la novedad. Que valoran la propiedad real sobre la posesión aparente. Que entienden que la privacidad tiene un coste de conveniencia y están dispuestos a pagarlo.</p>
+          <p>No te pedimos que seas un activista de la privacidad. No te pedimos que rechaces la tecnología. Te pedimos una sola cosa: que el objeto más íntimo de tu vida sea realmente tuyo.</p>
+          <p>Si eso te parece razonable, Kore es para ti.</p>
+          <p>Si no, hay 17 modelos de iPhone y 40 modelos de Samsung para elegir. Sin ironía. Elegir bien es más importante que elegirnos a nosotros.</p>
+        </div>
+      </section>
+
+      <section class="m-chapter">
+        <div class="m-label label">VIII — El compromiso</div>
+        <div class="m-text">
+          <p class="m-lead">Nosotros también firmamos este manifiesto.</p>
+          <p>Nos comprometemos a fabricar exactamente 1.000 unidades. No buscaremos inversión que requiera escalar más allá de eso. No venderemos la empresa a un grupo más grande. No cambiaremos el modelo de negocio para monetizar datos.</p>
+          <p>Si alguno de estos compromisos se rompe, el manifiesto original seguirá siendo público. Cualquier propietario de un Kore tendrá el derecho de señalar la contradicción.</p>
+          <p>Este texto es nuestra palabra. Y los 1.000 números de serie grabados en titanio son la garantía física de que la cumplimos.</p>
+        </div>
+      </section>
+
+      <div class="m-final">
+        <p class="label" style="margin-bottom:24px">La línea final</p>
+        <blockquote>
+          "El smartphone que llevas encima debería ser el objeto más tuyo del mundo.<br/>
+          Kore es exactamente eso. Nada más. Nada menos."
+        </blockquote>
+        <div class="m-sig">
+          <span class="label">Kore — Founders Edition — 1.000 Unidades</span>
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .manifesto-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+  }
+
+  h1 {
+    font-size: clamp(48px, 7vw, 96px);
+    line-height: 1.0;
+    margin: 24px 0 16px;
+  }
+
+  h1 em { color: var(--amber); font-style: italic; }
+  .hero-meta { margin-top: 16px; }
+
+  .manifesto-body {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 80px 48px;
+  }
+
+  .m-chapter {
+    padding: 56px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .m-chapter.accent { background: none; }
+
+  .m-chapter.accent-dark {
+    background: rgba(200,169,110,0.03);
+    padding: 56px 40px;
+    margin: 0 -40px;
+    border-left: 2px solid var(--amber);
+  }
+
+  .m-label {
+    margin-bottom: 28px;
+  }
+
+  .m-lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(22px, 3vw, 32px);
+    font-style: italic;
+    color: var(--ivory);
+    line-height: 1.3;
+    margin-bottom: 28px !important;
+  }
+
+  .m-text p {
+    font-size: 14px;
+    color: var(--titanium-light);
+    line-height: 1.95;
+    margin-bottom: 20px;
+  }
+
+  .m-text p:last-child { margin-bottom: 0; }
+
+  .m-divider-full {
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .m-divider-full::before, .m-divider-full::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(200,169,110,0.2);
+  }
+
+  .m-list { display: flex; flex-direction: column; gap: 20px; margin-top: 8px; }
+
+  .ml-item {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--titanium-light);
+    line-height: 1.8;
+  }
+
+  .ml-icon {
+    flex-shrink: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .ml-item strong { color: var(--ivory); font-weight: 400; }
+
+  .m-final {
+    padding: 80px 0 40px;
+    text-align: center;
+  }
+
+  .m-final blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 3vw, 30px);
+    font-style: italic;
+    color: var(--ivory);
+    line-height: 1.5;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .m-sig { margin-top: 24px; }
+
+  @media (max-width: 768px) {
+    .manifesto-body { padding: 48px 24px; }
+    .m-chapter.accent-dark { padding: 40px 24px; margin: 0 -24px; }
+  }
+</style>

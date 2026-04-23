@@ -1,0 +1,148 @@
+---
+const { current = '' } = Astro.props;
+const links = [
+  { href: '/', label: 'Inicio' },
+  { href: '/empresa', label: 'Empresa' },
+  { href: '/filosofia', label: 'Filosofía' },
+  { href: '/manifiesto', label: 'Manifiesto' },
+  { href: '/inscripcion', label: 'Inscripción' },
+  { href: '/estrategia', label: 'Estrategia' },
+  { href: '/vs-competencia', label: 'vs. Competencia' },
+];
+---
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">KORE</a>
+    <div class="badge">INTERNAL</div>
+    <ul>
+      {links.map(l => (
+        <li>
+          <a href={l.href} class:list={[{ active: current === l.href }]}>
+            {l.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <ul class="mobile-menu" id="mobileMenu">
+    {links.map(l => (
+      <li><a href={l.href}>{l.label}</a></li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(9,9,9,0.92);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+  }
+
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    color: var(--ivory);
+    flex-shrink: 0;
+  }
+
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 0.25em;
+    color: var(--black);
+    background: var(--amber);
+    padding: 3px 8px;
+    flex-shrink: 0;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin-left: auto;
+  }
+
+  ul a {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--titanium);
+    transition: color 0.2s;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+  }
+
+  ul a:hover, ul a.active {
+    color: var(--ivory);
+    border-bottom-color: var(--amber);
+  }
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: auto;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 1px;
+    background: var(--titanium-light);
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 16px 24px 24px;
+    gap: 0;
+    border-top: 1px solid rgba(200,169,110,0.1);
+  }
+
+  .mobile-menu.open { display: flex; }
+
+  .mobile-menu a {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--titanium-light);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    .nav-inner ul { display: none; }
+    .menu-toggle { display: flex; }
+    .nav-inner { padding: 0 24px; }
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle?.addEventListener('click', () => menu?.classList.toggle('open'));
+</script>

@@ -1,0 +1,228 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Bienvenido al equipo">
+  <Nav current="/" />
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="label">info.getkore.es — Documento interno</p>
+      <h1>El smartphone<br/><em>que es tuyo</em><br/>de verdad.</h1>
+      <p class="sub">Esta web recoge todo lo que necesitas saber sobre Kore:<br/>filosofía, producto, estrategia y visión de equipo.</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="num amber">1.000</span>
+          <span class="lbl">Unidades totales</span>
+        </div>
+        <div class="stat">
+          <span class="num">7</span>
+          <span class="lbl">Años de actualizaciones</span>
+        </div>
+        <div class="stat">
+          <span class="num">0</span>
+          <span class="lbl">Datos enviados</span>
+        </div>
+        <div class="stat">
+          <span class="num amber">€2.499</span>
+          <span class="lbl">Desde</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <p class="label" style="margin-bottom:48px">Navega por las secciones</p>
+    <div class="grid">
+
+      <a href="/empresa" class="card">
+        <span class="card-num label">01</span>
+        <h2>La Empresa</h2>
+        <p>Quiénes somos, por qué existimos y qué nos hace diferentes desde la base.</p>
+        <span class="card-link amber">Ver más →</span>
+      </a>
+
+      <a href="/filosofia" class="card">
+        <span class="card-num label">02</span>
+        <h2>Filosofía</h2>
+        <p>Los principios que guían cada decisión de diseño, producto y negocio.</p>
+        <span class="card-link amber">Ver más →</span>
+      </a>
+
+      <a href="/manifiesto" class="card">
+        <span class="card-num label">03</span>
+        <h2>Manifiesto</h2>
+        <p>El texto fundacional de Kore. Por qué el smartphone actual no es tuyo y qué hacemos al respecto.</p>
+        <span class="card-link amber">Ver más →</span>
+      </a>
+
+      <a href="/inscripcion" class="card">
+        <span class="card-num label">04</span>
+        <h2>Página de Inscripción</h2>
+        <p>La landing de lista de espera con el flujo completo de email de bienvenida.</p>
+        <span class="card-link amber">Ver más →</span>
+      </a>
+
+      <a href="/estrategia" class="card">
+        <span class="card-num label">05</span>
+        <h2>Estrategia de Lanzamiento</h2>
+        <p>Plan de 6 meses: canales, audiencias, hitos y métricas de éxito.</p>
+        <span class="card-link amber">Ver más →</span>
+      </a>
+
+      <a href="/vs-competencia" class="card">
+        <span class="card-num label">06</span>
+        <h2>Kore vs. Competencia</h2>
+        <p>Por qué Kore gana donde Apple, Samsung y otros no pueden seguirte.</p>
+        <span class="card-link amber">Ver más →</span>
+      </a>
+
+    </div>
+
+    <div class="quote-block">
+      <blockquote>
+        "No es el más barato. No tiene el ecosistema más grande.<br/>
+        Pero es el único que, cuando lo compras, es completamente tuyo."
+      </blockquote>
+      <cite class="label">— Manifiesto Kore</cite>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(200,169,110,0.06) 0%, transparent 70%);
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+  }
+
+  .hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 120px 48px 80px;
+    width: 100%;
+  }
+
+  .hero-inner .label { margin-bottom: 32px; }
+
+  h1 {
+    font-size: clamp(52px, 8vw, 100px);
+    line-height: 1.0;
+    margin-bottom: 32px;
+    color: var(--ivory);
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--amber);
+  }
+
+  .sub {
+    font-size: 14px;
+    color: var(--titanium-light);
+    line-height: 1.8;
+    margin-bottom: 64px;
+    max-width: 520px;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    border: 1px solid rgba(200,169,110,0.15);
+  }
+
+  .stat {
+    padding: 24px 20px;
+    border-right: 1px solid rgba(200,169,110,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .stat:last-child { border-right: none; }
+
+  .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--ivory);
+  }
+
+  .lbl {
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--titanium);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 80px;
+  }
+
+  .card {
+    background: var(--carbon);
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid rgba(255,255,255,0.04);
+    transition: border-color 0.3s, background 0.3s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-color: rgba(200,169,110,0.3);
+    background: rgba(200,169,110,0.04);
+  }
+
+  .card-num { margin-bottom: 8px; }
+
+  .card h2 {
+    font-size: 26px;
+    color: var(--ivory);
+  }
+
+  .card p {
+    font-size: 11px;
+    color: var(--titanium);
+    line-height: 1.8;
+    flex: 1;
+  }
+
+  .card-link {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    margin-top: 8px;
+  }
+
+  .quote-block {
+    border-left: 2px solid var(--amber);
+    padding: 32px 40px;
+    background: var(--carbon);
+    margin-top: 80px;
+  }
+
+  blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--ivory);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 900px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .grid { grid-template-columns: 1fr; }
+    .hero-inner { padding: 100px 24px 60px; }
+  }
+</style>

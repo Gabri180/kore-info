@@ -1,0 +1,375 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Filosofía" description="Los principios que guían cada decisión en Kore.">
+  <Nav current="/filosofia" />
+
+  <header class="page-hero">
+    <div class="section" style="padding-top:140px">
+      <p class="label">02 — Filosofía</p>
+      <div class="divider"></div>
+      <h1>Creemos en cosas<br/><em>que no cambian.</em></h1>
+      <p class="hero-sub">No somos anti-tecnología. Somos pro-propiedad, pro-privacidad y pro-permanencia. Hay una diferencia.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Principios fundacionales -->
+    <section class="section">
+      <p class="label">Los cuatro principios</p>
+      <div class="divider"></div>
+      <div class="principles">
+
+        <div class="principle">
+          <div class="p-header">
+            <span class="p-num amber label">Principio I</span>
+            <h2>Propiedad real</h2>
+          </div>
+          <div class="p-body">
+            <div class="p-text">
+              <p>Comprar un teléfono hoy no significa ser su propietario. Significa pagar por una licencia de uso que el fabricante puede revocar, actualizar o alterar sin tu consentimiento.</p>
+              <p>Los términos y condiciones que aceptas al configurar un iPhone o un Android te convierten en inquilino del hardware que pagaste. El propietario real es el fabricante.</p>
+              <p>Kore invierte este contrato. Cuando recibes un Kore, tienes acceso completo al hardware, al software, a las claves de cifrado y a cada componente del dispositivo. No hay capas de protección que te oculten tu propio objeto.</p>
+              <div class="p-quote">
+                <p>"El número grabado en tu Kore no es decorativo. Es la prueba criptográfica y física de que ese dispositivo, y solo ese, te pertenece."</p>
+              </div>
+            </div>
+            <div class="p-visual">
+              <div class="contrast-table">
+                <div class="ct-row header">
+                  <span></span>
+                  <span class="label">Industria</span>
+                  <span class="label amber">Kore</span>
+                </div>
+                <div class="ct-row">
+                  <span>Propietario real</span>
+                  <span class="titanium">El fabricante</span>
+                  <span class="amber">Tú</span>
+                </div>
+                <div class="ct-row">
+                  <span>Acceso al código</span>
+                  <span class="titanium">Bloqueado</span>
+                  <span class="amber">Total</span>
+                </div>
+                <div class="ct-row">
+                  <span>Reparación</span>
+                  <span class="titanium">Solo autorizado</span>
+                  <span class="amber">Por ti</span>
+                </div>
+                <div class="ct-row">
+                  <span>Revocación remota</span>
+                  <span class="titanium">Posible</span>
+                  <span class="amber">Imposible</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="principle">
+          <div class="p-header">
+            <span class="p-num amber label">Principio II</span>
+            <h2>Privacidad sin compromiso</h2>
+          </div>
+          <div class="p-body">
+            <div class="p-text">
+              <p>Privacy by design no es un eslogan para nosotros. Es la restricción técnica más severa que nos hemos impuesto: Kore no puede enviar datos a ningún servidor externo, ni siquiera para diagnósticos.</p>
+              <p>No hay telemetría. No hay análisis de uso. No hay sincronización silenciosa. Cuando apagas el micrófono con el kill switch físico, el hardware se desconecta. No es un flag de software que un exploit puede revertir. Es un circuito abierto.</p>
+              <p>Somos conscientes de que esta postura nos hace incompatibles con ciertos servicios. Lo aceptamos. La privacidad real tiene un coste de conveniencia. Kore es para personas que prefieren pagar ese coste.</p>
+              <div class="p-quote">
+                <p>"La diferencia entre privacidad como característica y privacidad como arquitectura es la diferencia entre una promesa y una imposibilidad física."</p>
+              </div>
+            </div>
+            <div class="p-visual">
+              <div class="privacy-stack">
+                <div class="ps-layer">
+                  <span class="ps-num label">04</span>
+                  <div>
+                    <h5>KoreOS</h5>
+                    <p>Sin telemetría, sin tracking, código auditable</p>
+                  </div>
+                </div>
+                <div class="ps-layer">
+                  <span class="ps-num label">03</span>
+                  <div>
+                    <h5>Cifrado de hardware</h5>
+                    <p>Clave única generada en dispositivo, nunca sale del chip</p>
+                  </div>
+                </div>
+                <div class="ps-layer">
+                  <span class="ps-num label">02</span>
+                  <div>
+                    <h5>Kill switch físico</h5>
+                    <p>Desconexión de hardware de cámara, micrófono y radio</p>
+                  </div>
+                </div>
+                <div class="ps-layer amber-border">
+                  <span class="ps-num amber label">01</span>
+                  <div>
+                    <h5>Sin datos enviados</h5>
+                    <p>Verificado con auditoría independiente anual</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="principle">
+          <div class="p-header">
+            <span class="p-num amber label">Principio III</span>
+            <h2>Permanencia sobre novedad</h2>
+          </div>
+          <div class="p-body">
+            <div class="p-text">
+              <p>La industria del smartphone tiene el ciclo de obsolescencia más agresivo de cualquier categoría de producto en la historia. El modelo medio dura 18 meses antes de quedar "obsoleto" —no porque haya dejado de funcionar, sino porque el fabricante dejó de darle soporte.</p>
+              <p>Kore no compite en ese juego. Diseñamos para la permanencia: 7 años de actualizaciones garantizadas, componentes disponibles para reparación, hardware sin soldaduras que requieran una empresa autorizada para abrir.</p>
+              <p>El titanio envejece bien. Las ideas que no dependen de la moda también. Un Kore en 2031 no es un dispositivo viejo: es un objeto que ha acumulado historia.</p>
+              <div class="p-quote">
+                <p>"Diseñamos para el año 7. Si algo no puede sobrevivir 7 años de uso real, no entra en el producto."</p>
+              </div>
+            </div>
+            <div class="p-visual">
+              <div class="timeline">
+                <div class="tl-item current">
+                  <span class="tl-year amber">2027</span>
+                  <span class="tl-label">Entrega Founders Edition</span>
+                </div>
+                <div class="tl-item">
+                  <span class="tl-year">2028</span>
+                  <span class="tl-label">Año 2 — Soporte garantizado</span>
+                </div>
+                <div class="tl-item">
+                  <span class="tl-year">2030</span>
+                  <span class="tl-label">Año 4 — La mayoría cambia de móvil</span>
+                </div>
+                <div class="tl-item">
+                  <span class="tl-year">2032</span>
+                  <span class="tl-label">Año 6 — Kore sigue con soporte activo</span>
+                </div>
+                <div class="tl-item">
+                  <span class="tl-year amber">2034</span>
+                  <span class="tl-label">Año 7 — Final garantía oficial</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="principle">
+          <div class="p-header">
+            <span class="p-num amber label">Principio IV</span>
+            <h2>Honestidad sobre hipérbole</h2>
+          </div>
+          <div class="p-body">
+            <div class="p-text">
+              <p>Kore no tiene la cámara más avanzada del mundo. No tiene el procesador más rápido. No tiene el ecosistema de aplicaciones más amplio.</p>
+              <p>Estas son afirmaciones que haría cualquier otro fabricante, y que serían falsas en seis meses. No jugamos a ese juego porque no podemos ganar y porque no queremos ganar de esa manera.</p>
+              <p>Lo que tenemos es más difícil de fabricar y más difícil de copiar: un dispositivo que cumple exactamente lo que promete, construido por personas que creen que el cliente merece la verdad incluso cuando la verdad es inconveniente.</p>
+              <div class="p-quote">
+                <p>"No usamos superlativos en nuestro marketing. Si no podemos probarlo con una auditoría, no lo decimos."</p>
+              </div>
+            </div>
+            <div class="p-visual">
+              <div class="honesty-list">
+                <div class="hl-item no">
+                  <span>✗</span>
+                  <p>"El smartphone más avanzado del mundo"</p>
+                </div>
+                <div class="hl-item no">
+                  <span>✗</span>
+                  <p>"La cámara más revolucionaria"</p>
+                </div>
+                <div class="hl-item no">
+                  <span>✗</span>
+                  <p>"Experiencia sin precedentes"</p>
+                </div>
+                <div class="hl-sep label">Lo que sí decimos</div>
+                <div class="hl-item yes">
+                  <span>✓</span>
+                  <p>"Titanio Grade 5. Mecanizado en una pieza."</p>
+                </div>
+                <div class="hl-item yes">
+                  <span>✓</span>
+                  <p>"1.000 unidades. No más. Nunca."</p>
+                </div>
+                <div class="hl-item yes">
+                  <span>✓</span>
+                  <p>"Cero datos enviados. Verificado."</p>
+                </div>
+                <div class="hl-item yes">
+                  <span>✓</span>
+                  <p>"7 años de actualizaciones garantizadas."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Coda -->
+    <section class="coda-section">
+      <div class="section" style="text-align:center">
+        <h2 style="font-size:clamp(28px,4vw,52px); max-width:680px; margin:0 auto 32px">Esta filosofía no es un diferencial competitivo.<br/><em>Es un límite.</em></h2>
+        <p style="font-size:13px; color:var(--titanium-light); max-width:560px; margin:0 auto; line-height:1.9">No negociamos estos principios por volumen de ventas, presión inversora o conveniencia de mercado. Son la razón por la que Kore existe. Si cambiaran, Kore dejaría de existir.</p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .page-hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(ellipse 50% 50% at 70% 40%, rgba(200,169,110,0.06) 0%, transparent 60%);
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+  }
+
+  h1 {
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: 1.05;
+    margin: 24px 0 32px;
+  }
+  h1 em { color: var(--amber); font-style: italic; }
+
+  .hero-sub {
+    font-size: 14px;
+    color: var(--titanium-light);
+    max-width: 520px;
+    line-height: 1.8;
+  }
+
+  .principle {
+    border: 1px solid rgba(200,169,110,0.1);
+    margin-bottom: 2px;
+  }
+
+  .p-header {
+    padding: 40px 48px 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .p-num { display: block; margin-bottom: 8px; }
+
+  .p-header h2 { font-size: clamp(28px, 3vw, 42px); color: var(--ivory); }
+
+  .p-body {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 0;
+  }
+
+  .p-text {
+    padding: 40px 48px;
+    border-right: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .p-text p {
+    font-size: 13px;
+    color: var(--titanium-light);
+    line-height: 1.9;
+    margin-bottom: 20px;
+  }
+
+  .p-quote {
+    border-left: 2px solid var(--amber);
+    padding: 16px 20px;
+    margin-top: 24px;
+    background: rgba(200,169,110,0.03);
+  }
+
+  .p-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--ivory);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .p-visual { padding: 40px 40px; }
+
+  /* Contrast table */
+  .contrast-table { width: 100%; }
+  .ct-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 11px;
+    gap: 8px;
+  }
+  .ct-row.header { padding-bottom: 12px; }
+  .ct-row span:first-child { color: var(--titanium-light); }
+
+  /* Privacy stack */
+  .privacy-stack { display: flex; flex-direction: column; gap: 2px; }
+  .ps-layer {
+    background: var(--carbon);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-left: 2px solid rgba(200,169,110,0.15);
+  }
+  .ps-layer.amber-border { border-left-color: var(--amber); }
+  .ps-num { flex-shrink: 0; }
+  .ps-layer h5 { font-size: 12px; color: var(--ivory); margin-bottom: 4px; font-family: 'DM Mono', monospace; font-weight: 400; }
+  .ps-layer p { font-size: 10px; color: var(--titanium); line-height: 1.5; }
+
+  /* Timeline */
+  .timeline { display: flex; flex-direction: column; gap: 2px; }
+  .tl-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    background: var(--carbon);
+  }
+  .tl-year {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: var(--titanium);
+    flex-shrink: 0;
+    width: 48px;
+  }
+  .tl-label { font-size: 11px; color: var(--titanium-light); }
+
+  /* Honesty list */
+  .honesty-list { display: flex; flex-direction: column; gap: 2px; }
+  .hl-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .hl-item.no { background: rgba(192,57,43,0.06); color: var(--titanium); }
+  .hl-item.no span { color: #C0392B; flex-shrink: 0; }
+  .hl-item.yes { background: rgba(200,169,110,0.05); color: var(--ivory); }
+  .hl-item.yes span { color: var(--amber); flex-shrink: 0; }
+  .hl-sep { padding: 12px 16px; background: var(--dark); }
+
+  .coda-section {
+    background: var(--carbon);
+    border-top: 1px solid rgba(200,169,110,0.1);
+    padding: 80px 0;
+  }
+
+  .coda-section h2 em { color: var(--amber); font-style: italic; }
+
+  @media (max-width: 900px) {
+    .p-body { grid-template-columns: 1fr; }
+    .p-text { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.04); padding: 32px 24px; }
+    .p-visual { padding: 32px 24px; }
+    .p-header { padding: 32px 24px; }
+  }
+</style>

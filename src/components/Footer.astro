@@ -1,0 +1,114 @@
+---
+---
+<footer>
+  <div class="footer-inner">
+    <div class="left">
+      <span class="logo">KORE</span>
+      <p>Documento interno del equipo.<br/>Confidencial — No distribuir externamente.</p>
+    </div>
+    <div class="center">
+      <nav>
+        <a href="/filosofia">Filosofía</a>
+        <a href="/manifiesto">Manifiesto</a>
+        <a href="/inscripcion">Inscripción</a>
+        <a href="/estrategia">Estrategia</a>
+        <a href="/vs-competencia">vs. Competencia</a>
+        <a href="/empresa">Empresa</a>
+      </nav>
+    </div>
+    <div class="right">
+      <span class="label">Edición Fundadores</span>
+      <span class="units">1.000 / 1.000</span>
+      <span class="sub">Unidades totales</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="label">© 2026 KORE — INTERNAL USE ONLY — info.getkore.es</span>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid rgba(200,169,110,0.15);
+    background: var(--carbon);
+    margin-top: 80px;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 48px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    color: var(--ivory);
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .left p {
+    font-size: 10px;
+    color: var(--titanium);
+    line-height: 1.7;
+  }
+
+  .center nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+
+  .center a {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--titanium);
+    transition: color 0.2s;
+  }
+
+  .center a:hover { color: var(--amber); }
+
+  .right { text-align: right; }
+
+  .right .label { display: block; margin-bottom: 8px; }
+
+  .units {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--amber);
+    letter-spacing: 0.1em;
+  }
+
+  .sub {
+    display: block;
+    font-size: 9px;
+    color: var(--titanium);
+    letter-spacing: 0.2em;
+    margin-top: 4px;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding: 20px 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      padding: 40px 24px;
+      gap: 32px;
+    }
+    .right { text-align: left; }
+    .footer-bottom { padding: 20px 24px; }
+  }
+</style>

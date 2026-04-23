@@ -1,0 +1,400 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Kore vs. Competencia" description="Por qué Kore es diferente a Apple, Samsung y otras alternativas.">
+  <Nav current="/vs-competencia" />
+
+  <header class="page-hero">
+    <div class="section" style="padding-top:140px">
+      <p class="label">06 — Kore vs. Competencia</p>
+      <div class="divider"></div>
+      <h1>Por qué Kore gana<br/><em>donde otros no pueden.</em></h1>
+      <p class="hero-sub">No competimos en el mismo terreno que Apple o Samsung. Ganamos en dimensiones que ellos han elegido ignorar porque no encajan con su modelo de negocio.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- El argumento central -->
+    <section class="section">
+      <p class="label">El argumento central</p>
+      <div class="divider"></div>
+      <div class="argument-block">
+        <div class="arg-main">
+          <h2>Ellos no pueden<br/><em>darte lo que damos nosotros.</em></h2>
+          <p>No es que Apple o Samsung sean malas empresas. Son empresas excelentes en lo que hacen: construir ecosistemas que maximizan el tiempo de pantalla, la dependencia de sus servicios y los ingresos por datos y suscripciones.</p>
+          <p>El problema es que ese modelo de negocio es estructuralmente incompatible con la propiedad real, la privacidad verdadera y la permanencia del dispositivo.</p>
+          <p>Para que Apple te ofrezca lo que Kore ofrece, Apple tendría que destruir su modelo de negocio. Por eso no lo hacen. No es falta de voluntad: es incompatibilidad estructural.</p>
+        </div>
+        <div class="arg-visual">
+          <div class="incompatibility">
+            <h4 class="titanium label" style="margin-bottom:16px">Por qué la industria no puede imitarnos</h4>
+            <div class="ic-item">
+              <span class="ic-company">Apple</span>
+              <p>iCloud, App Store (30%), Apple Intelligence, telemetría son ~60% de los ingresos. Ofrecer privacidad real destruiría el negocio.</p>
+            </div>
+            <div class="ic-item">
+              <span class="ic-company">Samsung</span>
+              <p>Google Services, Samsung Pay, Samsung Health. Cada servicio preinstalado representa revenue. La privacidad es el producto que venden a terceros.</p>
+            </div>
+            <div class="ic-item">
+              <span class="ic-company">Google (Pixel)</span>
+              <p>Google es la empresa de publicidad más grande del mundo. Su teléfono es un dispositivo de recolección de datos por diseño. No existe versión sin esto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabla comparativa -->
+    <section class="dark-section">
+      <div class="section">
+        <p class="label">Comparativa directa</p>
+        <div class="divider"></div>
+
+        <div class="comp-table">
+          <div class="ct-header">
+            <div class="ct-feature"></div>
+            <div class="ct-brand brand-kore">
+              <span class="brand-name amber">KORE</span>
+              <span class="brand-sub label">Founders Edition</span>
+            </div>
+            <div class="ct-brand">
+              <span class="brand-name">Apple</span>
+              <span class="brand-sub label">iPhone 16 Pro</span>
+            </div>
+            <div class="ct-brand">
+              <span class="brand-name">Samsung</span>
+              <span class="brand-sub label">Galaxy S25 Ultra</span>
+            </div>
+            <div class="ct-brand">
+              <span class="brand-name">Fairphone</span>
+              <span class="brand-sub label">Fairphone 5</span>
+            </div>
+          </div>
+
+          {[
+            { feature: 'Propiedad real del hardware', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
+            { feature: 'Cero datos enviados (verificado)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Kill switch físico (hardware)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Reparable por el usuario', kore: '✓', apple: '~', samsung: '~', fair: '✓' },
+            { feature: '7 años de soporte garantizado', kore: '✓', apple: '~6', samsung: '~5', fair: '✓' },
+            { feature: 'Código auditable', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
+            { feature: 'Sin telemetría de uso', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Número de serie único grabado', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Clave de cifrado solo en dispositivo', kore: '✓', apple: '~', samsung: '✗', fair: '✗' },
+            { feature: 'Sin servicios preinstalados', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
+            { feature: 'Edición limitada (exclusividad)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Precio', kore: '€2.499+', apple: '€1.329+', samsung: '€1.449+', fair: '€699+' },
+          ].map(row => (
+            <div class="ct-row">
+              <div class="ct-feature-name">{row.feature}</div>
+              <div class:list={['ct-val', 'val-kore', { 'val-yes': row.kore === '✓', 'val-no': row.kore === '✗' }]}>{row.kore}</div>
+              <div class:list={['ct-val', { 'val-yes': row.apple === '✓', 'val-no': row.apple === '✗', 'val-mid': row.apple !== '✓' && row.apple !== '✗' }]}>{row.apple}</div>
+              <div class:list={['ct-val', { 'val-yes': row.samsung === '✓', 'val-no': row.samsung === '✗', 'val-mid': row.samsung !== '✓' && row.samsung !== '✗' }]}>{row.samsung}</div>
+              <div class:list={['ct-val', { 'val-yes': row.fair === '✓', 'val-no': row.fair === '✗', 'val-mid': row.fair !== '✓' && row.fair !== '✗' }]}>{row.fair}</div>
+            </div>
+          ))}
+        </div>
+
+        <p class="table-note label">~ = Parcial o con condiciones. ✓ = Completo. ✗ = No disponible.</p>
+      </div>
+    </section>
+
+    <!-- Análisis por competidor -->
+    <section class="section">
+      <p class="label">Análisis en profundidad</p>
+      <div class="divider"></div>
+      <div class="competitor-analysis">
+
+        <div class="ca-item">
+          <div class="ca-header">
+            <span class="ca-brand">Apple iPhone</span>
+            <span class="ca-verdict label">Bueno en UX. Fallido en propiedad.</span>
+          </div>
+          <div class="ca-body">
+            <div class="ca-what">
+              <h4>Lo que hace bien</h4>
+              <ul>
+                <li>Ecosistema integrado sin fricción</li>
+                <li>Privacidad relativa dentro del ecosistema</li>
+                <li>Soporte ~6 años desde lanzamiento</li>
+                <li>Diseño premium consistente</li>
+              </ul>
+            </div>
+            <div class="ca-what gap">
+              <h4>Donde Kore gana</h4>
+              <ul>
+                <li>Apple sigue recopilando datos de uso, diagnósticos, Siri, App Store. "Privacidad" es su marketing, no su arquitectura.</li>
+                <li>No puedes reparar un iPhone sin perder garantía o usar piezas no certificadas (iCloud Lock).</li>
+                <li>Apple puede desactivar remotamente un dispositivo. Tú no eres el propietario real.</li>
+                <li>El ecosistema te atrapa: salir de iOS tiene un coste diseñado deliberadamente.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ca-item">
+          <div class="ca-header">
+            <span class="ca-brand">Samsung Galaxy</span>
+            <span class="ca-verdict label">Hardware premium. Datos comprometidos.</span>
+          </div>
+          <div class="ca-body">
+            <div class="ca-what">
+              <h4>Lo que hace bien</h4>
+              <ul>
+                <li>Hardware de alta gama consistente</li>
+                <li>Más personalizable que iOS</li>
+                <li>Múltiples gamas de precio</li>
+                <li>Mejorando en soporte (5 años)</li>
+              </ul>
+            </div>
+            <div class="ca-what gap">
+              <h4>Donde Kore gana</h4>
+              <ul>
+                <li>Samsung + Google: dos capas de recolección de datos. Samsung Ads, Samsung Health, Google Services.</li>
+                <li>Android de Samsung viene con 40+ apps preinstaladas que no puedes eliminar completamente.</li>
+                <li>One UI comparte datos con Samsung y socios. El GDPR ha multado a Samsung múltiples veces.</li>
+                <li>Aunque puedes instalar ROMs alternativas, void la garantía y pierdes funciones de hardware.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ca-item">
+          <div class="ca-header">
+            <span class="ca-brand">Google Pixel</span>
+            <span class="ca-verdict label">Honesto al menos: son Google.</span>
+          </div>
+          <div class="ca-body">
+            <div class="ca-what">
+              <h4>Lo que hace bien</h4>
+              <ul>
+                <li>Android puro, sin capas de fabricante</li>
+                <li>Actualizaciones rápidas</li>
+                <li>Buena cámara computacional</li>
+                <li>Soporte para ROMs alternativas</li>
+              </ul>
+            </div>
+            <div class="ca-what gap">
+              <h4>Donde Kore gana</h4>
+              <ul>
+                <li>Google es, por definición, una empresa de publicidad. Usar un Pixel sin Google Services es técnicamente posible pero no es lo que venden.</li>
+                <li>Tensor chip tiene Google Neural Core integrado. Los datos de IA procesados en dispositivo pueden sincronizarse.</li>
+                <li>El modelo de negocio de Google requiere tus datos. No es una opción: es la empresa.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ca-item">
+          <div class="ca-header">
+            <span class="ca-brand">Fairphone</span>
+            <span class="ca-verdict label">El competidor más cercano. Diferente misión.</span>
+          </div>
+          <div class="ca-body">
+            <div class="ca-what">
+              <h4>Lo que hace bien</h4>
+              <ul>
+                <li>Reparabilidad real, piezas disponibles</li>
+                <li>Ética en cadena de suministro</li>
+                <li>5 años de soporte</li>
+                <li>Precio accesible (€699)</li>
+              </ul>
+            </div>
+            <div class="ca-what gap">
+              <h4>Donde Kore es diferente</h4>
+              <ul>
+                <li>Fairphone sigue usando Android con Google Services. La privacidad no es su misión: la sostenibilidad y la ética de fabricación sí.</li>
+                <li>Diferentes mercados: Fairphone apunta a conciencia social, Kore apunta a privacidad y propiedad.</li>
+                <li>El titanio y la exclusividad de 1.000 unidades posicionan Kore como objeto premium, no como alternativa ética de gama media.</li>
+                <li>Podría existir un cliente que use ambos en diferentes momentos de su vida.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Objeciones -->
+    <section class="section" style="padding-top:0">
+      <p class="label">Objeciones comunes y respuestas</p>
+      <div class="divider"></div>
+      <div class="objections">
+
+        <div class="obj-item">
+          <h4>"€2.499 es demasiado caro para un smartphone"</h4>
+          <p>Es el precio de un ordenador portátil de gama media-alta. Si valoras tu privacidad, tus datos y la propiedad real del objeto que llevas encima 16h al día, €2.499 es una decisión razonada, no un lujo impulsivo.</p>
+          <p>Además: un Kore dura 7 años con soporte garantizado. €2.499 / 7 años = €357/año. Un iPhone Pro nuevo cada 2-3 años = €500+/año.</p>
+        </div>
+
+        <div class="obj-item">
+          <h4>"No tiene el ecosistema de apps de iOS/Android"</h4>
+          <p>KoreOS es compatible con aplicaciones Android (APKs). Las apps que la gente usa realmente —mensajería, navegador, mapas, banca— tienen alternativas privadas que funcionan en KoreOS.</p>
+          <p>Lo que no tendrás: TikTok integrado, 30 apps de Samsung preinstaladas y servicios de Google que no pediste. Muchos considerarán eso una ventaja.</p>
+        </div>
+
+        <div class="obj-item">
+          <h4>"1.000 unidades es demasiado pequeño para ser sostenible"</h4>
+          <p>1.000 unidades × €2.499 = €2,499M de revenue mínimo. Con márgenes de hardware premium y sin costes de marketing masivo, la Founders Edition es económicamente sostenible.</p>
+          <p>No diseñamos para escalar a millones. Diseñamos para hacer 1.000 unidades perfectas y honrar cada uno de los 1.000 contratos que firmamos.</p>
+        </div>
+
+        <div class="obj-item">
+          <h4>"¿Cómo sé que realmente no enviáis datos?"</h4>
+          <p>Auditoría independiente anual publicada en abierto. Código de KoreOS auditable por cualquier investigador de seguridad. El kill switch físico es verificable: si el circuito está abierto, la señal no pasa. Física, no promesas.</p>
+          <p>Apple dice "privacidad" pero no publica auditorías de su telemetría. Nosotros sí.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .page-hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+    background: radial-gradient(ellipse 50% 50% at 20% 60%, rgba(200,169,110,0.06) 0%, transparent 60%);
+  }
+
+  h1 { font-size: clamp(40px, 6vw, 80px); line-height: 1.05; margin: 24px 0 32px; }
+  h1 em { color: var(--amber); font-style: italic; }
+  .hero-sub { font-size: 13px; color: var(--titanium-light); max-width: 520px; line-height: 1.8; }
+
+  /* ARGUMENT */
+  .argument-block { display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; }
+  h2 { font-size: clamp(24px, 3.5vw, 40px); margin-bottom: 24px; }
+  h2 em { color: var(--amber); font-style: italic; }
+  .arg-main p { font-size: 13px; color: var(--titanium-light); line-height: 1.9; margin-bottom: 16px; }
+
+  .incompatibility { border: 1px solid rgba(200,169,110,0.12); }
+  .ic-item { padding: 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .ic-item:last-child { border-bottom: none; }
+  .ic-company { display: block; font-family: 'Cormorant Garamond', serif; font-size: 16px; color: var(--ivory); margin-bottom: 8px; }
+  .ic-item p { font-size: 11px; color: var(--titanium); line-height: 1.7; }
+
+  /* TABLE */
+  .dark-section { background: var(--carbon); }
+
+  .comp-table { border: 1px solid rgba(200,169,110,0.15); overflow-x: auto; }
+
+  .ct-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    background: var(--dark);
+    border-bottom: 1px solid rgba(200,169,110,0.15);
+  }
+
+  .ct-brand, .ct-feature {
+    padding: 16px 20px;
+    border-right: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .ct-brand.brand-kore { background: rgba(200,169,110,0.06); }
+
+  .brand-name { display: block; font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--titanium); margin-bottom: 4px; }
+  .brand-sub { display: block; }
+
+  .ct-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .ct-row:hover { background: rgba(255,255,255,0.02); }
+
+  .ct-feature-name {
+    padding: 12px 20px;
+    font-size: 11px;
+    color: var(--titanium-light);
+    border-right: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .ct-val {
+    padding: 12px 20px;
+    font-size: 13px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ct-val.val-kore { background: rgba(200,169,110,0.04); }
+  .val-yes { color: #4A9A6A; }
+  .val-no { color: #C0392B; }
+  .val-mid { color: var(--titanium); font-size: 10px; }
+
+  .table-note { margin-top: 12px; }
+
+  /* COMPETITOR ANALYSIS */
+  .competitor-analysis { display: flex; flex-direction: column; gap: 2px; }
+
+  .ca-item { border: 1px solid rgba(255,255,255,0.05); }
+
+  .ca-header {
+    padding: 24px 32px;
+    background: var(--carbon);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .ca-brand { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--ivory); }
+  .ca-verdict { color: var(--titanium); }
+
+  .ca-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .ca-what { padding: 28px 32px; }
+  .ca-what.gap { border-left: 1px solid rgba(255,255,255,0.04); }
+
+  .ca-what h4 { font-size: 14px; color: var(--ivory); margin-bottom: 16px; }
+
+  .ca-what ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+  .ca-what ul li { font-size: 11px; color: var(--titanium); line-height: 1.6; padding-left: 12px; position: relative; }
+  .ca-what ul li::before { content: '—'; position: absolute; left: 0; color: var(--titanium); }
+
+  .ca-what.gap ul li::before { color: var(--amber); }
+
+  /* OBJECTIONS */
+  .objections { display: flex; flex-direction: column; gap: 2px; }
+
+  .obj-item {
+    background: var(--carbon);
+    padding: 32px 40px;
+    border: 1px solid rgba(255,255,255,0.04);
+    border-left: 2px solid rgba(200,169,110,0.25);
+  }
+
+  .obj-item h4 { font-size: 17px; color: var(--ivory); margin-bottom: 16px; }
+
+  .obj-item p { font-size: 12px; color: var(--titanium-light); line-height: 1.8; margin-bottom: 12px; }
+
+  @media (max-width: 900px) {
+    .argument-block { grid-template-columns: 1fr; gap: 40px; }
+    .ct-header, .ct-row { grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; }
+    .ca-body { grid-template-columns: 1fr; }
+    .ca-what.gap { border-left: none; border-top: 1px solid rgba(255,255,255,0.04); }
+  }
+
+  @media (max-width: 600px) {
+    .comp-table { font-size: 9px; }
+    .ct-feature-name { font-size: 9px; }
+    .obj-item { padding: 24px; }
+  }
+</style>

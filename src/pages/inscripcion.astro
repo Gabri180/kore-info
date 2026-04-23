@@ -1,0 +1,603 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Inscripción" description="Página de lista de espera y email de bienvenida de Kore.">
+  <Nav current="/inscripcion" />
+
+  <header class="page-hero">
+    <div class="section" style="padding-top:140px">
+      <p class="label">04 — Inscripción</p>
+      <div class="divider"></div>
+      <h1>Lista de espera<br/><em>Founders Edition.</em></h1>
+      <p class="hero-sub">Esta página muestra la landing de captación y el email de bienvenida que reciben los inscritos. Ambos son piezas de comunicación clave del lanzamiento.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Página de inscripción (preview) -->
+    <section class="section">
+      <p class="label">Preview — Página de inscripción pública</p>
+      <div class="divider"></div>
+      <p class="section-desc">Así es como verá la página un visitante que llega desde redes, press o recomendación.</p>
+
+      <div class="preview-frame">
+        <div class="preview-bar">
+          <span class="label">getkore.es — Página pública</span>
+          <span class="dot"></span>
+          <span class="label amber">Live preview</span>
+        </div>
+
+        <div class="waitlist-page">
+          <!-- Hero de la landing -->
+          <div class="wl-hero">
+            <p class="wl-badge label">Founders Edition — 1.000 Unidades</p>
+            <h2 class="wl-title">El smartphone<br/>que es tuyo<br/><em>de verdad.</em></h2>
+            <p class="wl-sub">1.000 unidades. Titanio Grade 5. Cero datos enviados. Kill switch físico. 7 años de actualizaciones. Desde €2.499.</p>
+
+            <div class="wl-form-container">
+              <div class="wl-form">
+                <div class="wl-input-group">
+                  <input type="email" placeholder="tu@email.com" class="wl-input" id="emailInput" />
+                  <button class="wl-btn" id="submitBtn" type="button">Reservar plaza</button>
+                </div>
+                <p class="wl-note label">Sin tarjeta. Sin compromiso. Te avisamos cuando abran pre-órdenes.</p>
+              </div>
+              <div class="wl-success" id="successMsg" style="display:none">
+                <span class="success-icon amber">✓</span>
+                <div>
+                  <p class="success-title">Estás en la lista.</p>
+                  <p class="success-sub label">Revisa tu bandeja de entrada. Te hemos enviado un email de confirmación.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="wl-stats">
+              <div class="ws-item">
+                <span class="ws-num amber">847</span>
+                <span class="ws-label label">Plazas ocupadas</span>
+              </div>
+              <div class="ws-sep"></div>
+              <div class="ws-item">
+                <span class="ws-num">153</span>
+                <span class="ws-label label">Quedan disponibles</span>
+              </div>
+              <div class="ws-sep"></div>
+              <div class="ws-item">
+                <span class="ws-num amber">€2.499</span>
+                <span class="ws-label label">Desde</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pilares de valor -->
+          <div class="wl-pillars">
+            <div class="wl-pillar">
+              <span class="wl-p-icon amber">Ti</span>
+              <h4>Titanio Grade 5</h4>
+              <p>Mecanizado en una sola pieza. Sin costuras. El material de implantes médicos y estructuras aeroespaciales.</p>
+            </div>
+            <div class="wl-pillar">
+              <span class="wl-p-icon amber">0</span>
+              <h4>Cero datos</h4>
+              <p>KoreOS no envía ningún dato a ningún servidor externo. Auditado de forma independiente.</p>
+            </div>
+            <div class="wl-pillar">
+              <span class="wl-p-icon amber">7</span>
+              <h4>7 años garantizados</h4>
+              <p>Actualizaciones de seguridad y sistema por 7 años desde la fecha de entrega.</p>
+            </div>
+            <div class="wl-pillar">
+              <span class="wl-p-icon amber">⊕</span>
+              <h4>Kill switch físico</h4>
+              <p>Desconexión de hardware de cámara, micrófono y radio. No software. Circuito abierto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email de bienvenida -->
+    <section class="section" style="padding-top:0">
+      <p class="label">Preview — Email de bienvenida</p>
+      <div class="divider"></div>
+      <p class="section-desc">Este es el email exacto que recibe cada persona al inscribirse en la lista de espera.</p>
+
+      <div class="email-wrapper">
+        <div class="email-meta">
+          <div class="em-row">
+            <span class="label">De:</span>
+            <span>Kore &lt;hola@getkore.es&gt;</span>
+          </div>
+          <div class="em-row">
+            <span class="label">Para:</span>
+            <span class="amber">tu@email.com</span>
+          </div>
+          <div class="em-row">
+            <span class="label">Asunto:</span>
+            <span>Estás en la lista. 847 / 1000.</span>
+          </div>
+        </div>
+
+        <div class="email-body">
+          <!-- Email header -->
+          <div class="email-header">
+            <div class="email-logo">KORE</div>
+            <div class="email-stats-bar">
+              <span>1.000 Unidades</span>
+              <span class="bar-sep">|</span>
+              <span>7 Años garantizados</span>
+              <span class="bar-sep">|</span>
+              <span>0 Datos enviados</span>
+            </div>
+          </div>
+
+          <!-- Email content -->
+          <div class="email-content">
+            <div class="email-serial">
+              <span class="label" style="margin-bottom:12px;display:block">Tu número de reserva</span>
+              <div class="serial-display">
+                <span class="ser-n amber">847</span>
+                <span class="ser-d titanium">/</span>
+                <span class="ser-t">1000</span>
+              </div>
+            </div>
+
+            <h3 class="email-heading">Estás en la lista.</h3>
+
+            <p>Gracias por unirte a la Founders Edition de Kore. Eres la persona número <strong class="amber">847</strong> de un máximo de 1.000.</p>
+
+            <p>Quedan <strong>153 plazas disponibles</strong>. Cuando se completen, cerraremos la lista para siempre.</p>
+
+            <div class="email-quote">
+              <p>"El smartphone que llevas encima debería ser el objeto más tuyo del mundo. Estamos construyendo exactamente eso."</p>
+            </div>
+
+            <h4>¿Qué pasa ahora?</h4>
+
+            <div class="email-steps">
+              <div class="es-item">
+                <span class="es-num amber label">01</span>
+                <div>
+                  <strong>Recibes actualizaciones</strong>
+                  <p>Te contaremos el avance del proyecto, las especificaciones técnicas y la fecha de pre-orden antes que nadie.</p>
+                </div>
+              </div>
+              <div class="es-item">
+                <span class="es-num amber label">02</span>
+                <div>
+                  <strong>Pre-orden prioritaria</strong>
+                  <p>Los fundadores tienen acceso a pre-orden 72h antes de apertura pública. Tu número de reserva determina el orden.</p>
+                </div>
+              </div>
+              <div class="es-item">
+                <span class="es-num amber label">03</span>
+                <div>
+                  <strong>Entrega en 2027</strong>
+                  <p>Las unidades empezarán a enviarse en 2027. Recibirás tu número de serie grabado antes de que llegue el dispositivo.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="email-specs">
+              <h4>Lo que estamos construyendo</h4>
+              <div class="spec-grid">
+                <div class="spec-item">
+                  <span class="spec-label label">Material</span>
+                  <span class="spec-val">Titanio Grade 5</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label label">Privacidad</span>
+                  <span class="spec-val">Cero datos enviados</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label label">Seguridad</span>
+                  <span class="spec-val">Kill switch físico</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label label">Soporte</span>
+                  <span class="spec-val">7 años garantizados</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label label">Unidades</span>
+                  <span class="spec-val amber">1.000. No más.</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label label">Precio</span>
+                  <span class="spec-val">Desde €2.499</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="email-cta">
+              <a href="#" class="email-btn">Leer el Manifiesto</a>
+            </div>
+
+            <p class="email-footer-text">Si no solicitaste unirte a la lista de Kore, ignora este email. No nos guardarás rencor. No te enviaremos más correos salvo actualizaciones del proyecto.</p>
+          </div>
+
+          <!-- Email footer -->
+          <div class="email-footer-bar">
+            <span class="email-footer-logo">KORE</span>
+            <p>getkore.es · hola@getkore.es</p>
+            <p>Founders Edition · 1.000 Unidades</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notas del equipo -->
+    <section class="section" style="padding-top:0">
+      <p class="label">Notas del equipo — Estrategia de email</p>
+      <div class="divider"></div>
+      <div class="notes-grid">
+        <div class="note">
+          <h4>Contador real</h4>
+          <p>El contador "847/1000" debe actualizarse en tiempo real. Crear urgencia auténtica, no artificial. Cuando llegue a 1.000, la página cambia a "Lista cerrada".</p>
+        </div>
+        <div class="note">
+          <h4>Secuencia de emails</h4>
+          <p>El email de bienvenida va seguido de 4 emails en 8 semanas: specs técnicas, filosofía KoreOS, material y proceso, y apertura de pre-orden. Sin spam.</p>
+        </div>
+        <div class="note">
+          <h4>Tono del email</h4>
+          <p>Sin exclamaciones. Sin emojis. Sin urgencia falsa. El tono es el de una empresa que respeta la inteligencia de sus clientes. Como el producto.</p>
+        </div>
+        <div class="note">
+          <h4>Segmentación</h4>
+          <p>Los primeros 100 inscritos reciben acceso anticipado al diseño. Los 500 primeros tienen precio de early adopter garantizado si quisieramos aplicarlo.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  const input = document.getElementById('emailInput') as HTMLInputElement;
+  const btn = document.getElementById('submitBtn');
+  const success = document.getElementById('successMsg');
+
+  btn?.addEventListener('click', () => {
+    if (input?.value && input.value.includes('@')) {
+      const form = document.querySelector('.wl-form') as HTMLElement;
+      if (form) form.style.display = 'none';
+      if (success) success.style.display = 'flex';
+    }
+  });
+</script>
+
+<style>
+  .page-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+  }
+
+  h1 { font-size: clamp(40px, 6vw, 80px); line-height: 1.05; margin: 24px 0 32px; }
+  h1 em { color: var(--amber); font-style: italic; }
+
+  .hero-sub { font-size: 13px; color: var(--titanium-light); max-width: 520px; line-height: 1.8; }
+
+  .section-desc { font-size: 12px; color: var(--titanium); margin-bottom: 40px; line-height: 1.8; }
+
+  /* PREVIEW FRAME */
+  .preview-frame {
+    border: 1px solid rgba(200,169,110,0.2);
+    overflow: hidden;
+  }
+
+  .preview-bar {
+    background: var(--dark);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--amber);
+  }
+
+  /* WAITLIST PAGE */
+  .waitlist-page { background: var(--black); }
+
+  .wl-hero {
+    padding: 80px 48px;
+    background: radial-gradient(ellipse 60% 50% at 50% 40%, rgba(200,169,110,0.07) 0%, transparent 65%);
+    text-align: center;
+  }
+
+  .wl-badge {
+    display: inline-block;
+    border: 1px solid rgba(200,169,110,0.3);
+    padding: 6px 16px;
+    margin-bottom: 32px;
+    color: var(--amber);
+  }
+
+  .wl-title {
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.05;
+    margin-bottom: 24px;
+    color: var(--ivory);
+  }
+
+  .wl-title em { color: var(--amber); font-style: italic; }
+
+  .wl-sub {
+    font-size: 12px;
+    color: var(--titanium-light);
+    max-width: 480px;
+    margin: 0 auto 48px;
+    line-height: 1.8;
+  }
+
+  .wl-form-container { max-width: 480px; margin: 0 auto 48px; }
+
+  .wl-input-group { display: flex; gap: 0; }
+
+  .wl-input {
+    flex: 1;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,169,110,0.2);
+    border-right: none;
+    color: var(--ivory);
+    padding: 14px 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .wl-input:focus { border-color: var(--amber); }
+  .wl-input::placeholder { color: var(--titanium); }
+
+  .wl-btn {
+    background: var(--amber);
+    color: var(--black);
+    border: 1px solid var(--amber);
+    padding: 14px 28px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .wl-btn:hover { background: var(--amber-dark); }
+
+  .wl-note { margin-top: 12px; display: block; text-align: left; }
+
+  .wl-success {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(200,169,110,0.05);
+    border: 1px solid rgba(200,169,110,0.2);
+    padding: 24px;
+    text-align: left;
+  }
+
+  .success-icon { font-size: 24px; flex-shrink: 0; }
+  .success-title { font-size: 14px; color: var(--ivory); margin-bottom: 4px; }
+  .success-sub { display: block; }
+
+  .wl-stats { display: flex; justify-content: center; align-items: center; gap: 32px; }
+
+  .ws-item { text-align: center; }
+  .ws-num {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--ivory);
+  }
+  .ws-label { display: block; margin-top: 4px; }
+  .ws-sep { width: 1px; height: 40px; background: rgba(255,255,255,0.08); }
+
+  .wl-pillars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .wl-pillar {
+    padding: 32px 24px;
+    background: var(--carbon);
+    border-right: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .wl-p-icon {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .wl-pillar h4 { font-size: 16px; color: var(--ivory); margin-bottom: 8px; }
+  .wl-pillar p { font-size: 10px; color: var(--titanium); line-height: 1.7; }
+
+  /* EMAIL */
+  .email-wrapper {
+    border: 1px solid rgba(200,169,110,0.15);
+    overflow: hidden;
+    max-width: 620px;
+  }
+
+  .email-meta {
+    background: var(--dark);
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .em-row { display: flex; gap: 16px; font-size: 11px; }
+  .em-row .label { flex-shrink: 0; width: 60px; }
+
+  .email-body { background: #0D0D0B; }
+
+  .email-header {
+    background: var(--black);
+    padding: 32px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+  }
+
+  .email-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    letter-spacing: 0.4em;
+    color: var(--ivory);
+    margin-bottom: 16px;
+  }
+
+  .email-stats-bar {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: var(--titanium);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .bar-sep { color: var(--amber); }
+
+  .email-content { padding: 40px; }
+
+  .email-serial {
+    text-align: center;
+    padding: 32px;
+    background: rgba(200,169,110,0.04);
+    border: 1px solid rgba(200,169,110,0.15);
+    margin-bottom: 32px;
+  }
+
+  .serial-display { display: flex; align-items: baseline; justify-content: center; gap: 6px; }
+  .ser-n { font-family: 'Cormorant Garamond', serif; font-size: 56px; }
+  .ser-d { font-family: 'Cormorant Garamond', serif; font-size: 36px; }
+  .ser-t { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: var(--titanium); }
+
+  .email-heading { font-size: 28px; color: var(--ivory); margin-bottom: 20px; }
+
+  .email-content p {
+    font-size: 12px;
+    color: var(--titanium-light);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  .email-content strong { font-weight: 400; color: var(--ivory); }
+
+  .email-quote {
+    border-left: 2px solid var(--amber);
+    padding: 16px 20px;
+    margin: 24px 0;
+    background: rgba(200,169,110,0.04);
+  }
+
+  .email-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--ivory);
+    margin: 0;
+  }
+
+  .email-content h4 { font-size: 16px; color: var(--ivory); margin: 28px 0 16px; }
+
+  .email-steps { display: flex; flex-direction: column; gap: 2px; margin-bottom: 28px; }
+  .es-item {
+    display: flex;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--dark);
+    font-size: 11px;
+  }
+  .es-num { flex-shrink: 0; line-height: 1.8; }
+  .es-item strong { display: block; color: var(--ivory); margin-bottom: 4px; font-weight: 400; }
+  .es-item p { color: var(--titanium); line-height: 1.6; margin: 0; font-size: 11px; }
+
+  .email-specs { margin-bottom: 28px; }
+  .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .spec-item {
+    background: var(--dark);
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .spec-label { font-size: 8px; }
+  .spec-val { font-size: 12px; color: var(--ivory); }
+
+  .email-cta { text-align: center; margin: 32px 0; }
+  .email-btn {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid var(--amber);
+    color: var(--amber);
+    padding: 14px 40px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s;
+  }
+  .email-btn:hover { background: var(--amber); color: var(--black); }
+
+  .email-footer-text { font-size: 10px !important; color: var(--titanium) !important; }
+
+  .email-footer-bar {
+    background: var(--black);
+    padding: 24px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(200,169,110,0.08);
+  }
+  .email-footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    color: var(--titanium);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .email-footer-bar p { font-size: 9px; color: var(--titanium); margin-bottom: 4px; letter-spacing: 0.1em; }
+
+  /* NOTES */
+  .notes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+  .note {
+    background: var(--carbon);
+    padding: 32px;
+    border: 1px solid rgba(200,169,110,0.08);
+  }
+
+  .note h4 { font-size: 16px; color: var(--ivory); margin-bottom: 12px; }
+  .note p { font-size: 12px; color: var(--titanium); line-height: 1.8; }
+
+  @media (max-width: 768px) {
+    .wl-hero { padding: 48px 24px; }
+    .wl-input-group { flex-direction: column; }
+    .wl-input { border-right: 1px solid rgba(200,169,110,0.2); }
+    .wl-pillars { grid-template-columns: 1fr 1fr; }
+    .notes-grid { grid-template-columns: 1fr; }
+    .spec-grid { grid-template-columns: 1fr; }
+    .email-content { padding: 24px; }
+  }
+</style>

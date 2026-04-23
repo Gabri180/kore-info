@@ -1,0 +1,473 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Estrategia de Lanzamiento" description="Plan de 6 meses para el lanzamiento de la Founders Edition de Kore.">
+  <Nav current="/estrategia" />
+
+  <header class="page-hero">
+    <div class="section" style="padding-top:140px">
+      <p class="label">05 — Estrategia de Lanzamiento</p>
+      <div class="divider"></div>
+      <h1>De 0 a 1.000<br/><em>en 6 meses.</em></h1>
+      <p class="hero-sub">El plan completo para construir una comunidad, generar demanda real y vender la Founders Edition antes de fabricar el primer dispositivo.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Premisa estratégica -->
+    <section class="section">
+      <p class="label">La premisa</p>
+      <div class="divider"></div>
+      <div class="two-col">
+        <div>
+          <h2>No vendemos un producto.<br/><em>Vendemos una convicción.</em></h2>
+          <p>El lanzamiento de Kore no es una campaña de marketing convencional. No se trata de reach, CPM ni conversion rate en el sentido tradicional.</p>
+          <p>Se trata de encontrar a 1.000 personas en Europa que compartan una convicción específica sobre la propiedad y la privacidad, y que tengan tanto la capacidad de pagar €2.499 como la disposición a hacerlo por un producto que aún no existe.</p>
+          <p>Ese perfil no se alcanza con anuncios de Facebook. Se alcanza con argumentos sólidos distribuidos en los canales donde ese tipo de personas pasa su tiempo.</p>
+        </div>
+        <div class="premise-aside">
+          <div class="pa-item">
+            <span class="pa-num amber">1.000</span>
+            <span class="pa-label label">Objetivo total de unidades</span>
+          </div>
+          <div class="pa-item">
+            <span class="pa-num">6</span>
+            <span class="pa-label label">Meses hasta cierre de lista</span>
+          </div>
+          <div class="pa-item">
+            <span class="pa-num amber">~167</span>
+            <span class="pa-label label">Inscripciones/mes necesarias</span>
+          </div>
+          <div class="pa-item">
+            <span class="pa-num">€2.499M</span>
+            <span class="pa-label label">Revenue mínimo objetivo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="dark-section">
+      <div class="section">
+        <p class="label">El plan mes a mes</p>
+        <div class="divider"></div>
+
+        <div class="timeline">
+
+          <div class="tm-item">
+            <div class="tm-meta">
+              <span class="tm-month amber">Mes 1</span>
+              <span class="tm-name label">Encendido</span>
+            </div>
+            <div class="tm-content">
+              <h3>Lanzamiento del Manifiesto</h3>
+              <p>El Manifiesto se publica sin anuncios. Ni press release, ni nota de prensa. Se distribuye primero en comunidades de privacidad y tecnología en las que ya participamos: Hacker News, foros de LineageOS, comunidades de Signal y Tor, subreddits de degoogling.</p>
+              <p>El objetivo no es viralidad: es que las 500 personas más influyentes en el ecosistema de privacidad tecnológica lo lean y tengan opinión.</p>
+              <div class="tm-kpis">
+                <div class="kpi"><span class="amber">500</span><span>Lecturas orgánicas del Manifiesto</span></div>
+                <div class="kpi"><span class="amber">50</span><span>Comentarios/discusiones en foros</span></div>
+                <div class="kpi"><span class="amber">100</span><span>Primeras inscripciones en lista</span></div>
+              </div>
+              <div class="tm-actions">
+                <span class="label" style="margin-bottom:8px;display:block">Acciones clave</span>
+                <ul>
+                  <li>Publicar manifiesto en getkore.es</li>
+                  <li>Post en Hacker News (Show HN)</li>
+                  <li>Distribución en 5 comunidades de privacidad</li>
+                  <li>Abrir lista de espera con formulario mínimo</li>
+                  <li>Email de bienvenida automatizado en marcha</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tm-item">
+            <div class="tm-meta">
+              <span class="tm-month">Mes 2</span>
+              <span class="tm-name label">Comunidad</span>
+            </div>
+            <div class="tm-content">
+              <h3>Construcción de audiencia propia</h3>
+              <p>Lanzamos el canal de Instagram y el blog de Kore. El contenido no es marketing de producto: son ensayos sobre propiedad, privacidad y la industria del smartphone. Artículos de 1.500 palabras que no mencionan el precio hasta el párrafo 8.</p>
+              <p>Inicio de outreach a creadores de contenido tech con audiencias de privacidad: no pagamos reviews, ofrecemos acceso anticipado a la información técnica.</p>
+              <div class="tm-kpis">
+                <div class="kpi"><span>500</span><span>Seguidores Instagram</span></div>
+                <div class="kpi"><span>5</span><span>Artículos de blog publicados</span></div>
+                <div class="kpi"><span class="amber">300</span><span>Nuevas inscripciones</span></div>
+              </div>
+              <div class="tm-actions">
+                <span class="label" style="margin-bottom:8px;display:block">Acciones clave</span>
+                <ul>
+                  <li>Instagram: 3 posts/semana + stories</li>
+                  <li>Blog: 2 artículos de fondo/semana</li>
+                  <li>Outreach a 20 creadores tech</li>
+                  <li>Newsletter mensual a inscritos</li>
+                  <li>Primer email de secuencia: specs técnicas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tm-item">
+            <div class="tm-meta">
+              <span class="tm-month amber">Mes 3</span>
+              <span class="tm-name label">Credibilidad</span>
+            </div>
+            <div class="tm-content">
+              <h3>Revelación técnica + Prensa</h3>
+              <p>Publicamos las especificaciones técnicas completas de KoreOS con la documentación de auditoría de privacidad. No prometemos: demostramos. Los datos se analizan en público.</p>
+              <p>Outreach a prensa especializada: Wired, The Verge, Ars Technica. No mandamos notas de prensa genéricas: ofrecemos acceso exclusivo a la documentación técnica y una entrevista de 45 minutos con los fundadores.</p>
+              <div class="tm-kpis">
+                <div class="kpi"><span class="amber">2</span><span>Artículos en prensa especializada</span></div>
+                <div class="kpi"><span>300</span><span>Nuevas inscripciones</span></div>
+                <div class="kpi"><span class="amber">700</span><span>Total acumulado lista</span></div>
+              </div>
+              <div class="tm-actions">
+                <span class="label" style="margin-bottom:8px;display:block">Acciones clave</span>
+                <ul>
+                  <li>Publicar specs técnicas + auditoría</li>
+                  <li>Outreach a 10 medios especializados</li>
+                  <li>Video de demostración del kill switch físico</li>
+                  <li>AMA (Ask Me Anything) en Reddit</li>
+                  <li>Email de secuencia: KoreOS en detalle</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tm-item">
+            <div class="tm-meta">
+              <span class="tm-month">Mes 4</span>
+              <span class="tm-name label">Identidad</span>
+            </div>
+            <div class="tm-content">
+              <h3>Lanzamiento de identidad visual + diseño</h3>
+              <p>Revelamos el diseño físico del dispositivo: el titanio, el mecanizado, los números de serie grabados. El contenido visual de este mes es el más compartible: el objeto habla por sí mismo.</p>
+              <p>Publicamos el proceso de fabricación: dónde se mecaniza el titanio, quién realiza el control de calidad, cómo funciona la grabación del número de serie. Transparencia total de proceso.</p>
+              <div class="tm-kpis">
+                <div class="kpi"><span>+2.000</span><span>Seguidores Instagram</span></div>
+                <div class="kpi"><span class="amber">150</span><span>Nuevas inscripciones</span></div>
+                <div class="kpi"><span>850</span><span>Total acumulado lista</span></div>
+              </div>
+              <div class="tm-actions">
+                <span class="label" style="margin-bottom:8px;display:block">Acciones clave</span>
+                <ul>
+                  <li>Sesión fotográfica del dispositivo físico</li>
+                  <li>Vídeo de fabricación (titanio + mecanizado)</li>
+                  <li>Contenido Instagram: material y proceso</li>
+                  <li>Email de secuencia: El objeto</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tm-item">
+            <div class="tm-meta">
+              <span class="tm-month amber">Mes 5</span>
+              <span class="tm-name label">Pre-orden</span>
+            </div>
+            <div class="tm-content">
+              <h3>Apertura de pre-órdenes</h3>
+              <p>Los inscritos en lista de espera reciben acceso 72h antes que el público general. Los primeros 100 obtienen el precio de early adopter si se aplica.</p>
+              <p>La apertura pública genera el efecto de urgencia real: las unidades disponibles disminuyen visible y honestamente en la web. El contador no es fake.</p>
+              <div class="tm-kpis">
+                <div class="kpi"><span class="amber">500</span><span>Pre-órdenes en primeras 72h</span></div>
+                <div class="kpi"><span>€1.249.500</span><span>Revenue objetivo primeras 72h</span></div>
+                <div class="kpi"><span class="amber">1.000</span><span>Objetivo total lista cerrada</span></div>
+              </div>
+              <div class="tm-actions">
+                <span class="label" style="margin-bottom:8px;display:block">Acciones clave</span>
+                <ul>
+                  <li>Email a inscritos: "Tu acceso prioritario abre en 24h"</li>
+                  <li>Apertura pública con contador en vivo</li>
+                  <li>Coverage de medios coordinado ese día</li>
+                  <li>Posts en tiempo real del progreso</li>
+                  <li>Email de confirmación con número de serie asignado</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tm-item">
+            <div class="tm-meta">
+              <span class="tm-month">Mes 6</span>
+              <span class="tm-name label">Cierre</span>
+            </div>
+            <div class="tm-content">
+              <h3>Lista cerrada. Para siempre.</h3>
+              <p>Cuando se alcancen las 1.000 reservas, la web cambia a modo "Cerrado". No hay lista de espera de segunda vuelta, no hay "edición especial" sorpresa, no hay segunda oportunidad.</p>
+              <p>Este momento —la lista que se cierra— es una pieza de comunicación tan importante como la apertura. El cierre confirma que la promesa era real.</p>
+              <div class="tm-kpis">
+                <div class="kpi"><span class="amber">1.000</span><span>Unidades vendidas</span></div>
+                <div class="kpi"><span>€2.499.000</span><span>Revenue total mínimo</span></div>
+                <div class="kpi"><span class="amber">0</span><span>Unidades adicionales disponibles</span></div>
+              </div>
+              <div class="tm-actions">
+                <span class="label" style="margin-bottom:8px;display:block">Acciones clave</span>
+                <ul>
+                  <li>Cambio de web a estado "Cerrado"</li>
+                  <li>Email a todos los compradores: bienvenida oficial</li>
+                  <li>Post público: "La lista está cerrada"</li>
+                  <li>Inicio de producción formal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Canales -->
+    <section class="section">
+      <p class="label">Canales y audiencias</p>
+      <div class="divider"></div>
+      <div class="channels-grid">
+
+        <div class="channel">
+          <div class="ch-header">
+            <span class="ch-icon amber">IN</span>
+            <h4>Instagram</h4>
+          </div>
+          <p class="ch-role label">Identidad visual + comunidad</p>
+          <p>Contenido visual de alta calidad: el titanio, el proceso, los principios. 3 posts semanales. Sin memes, sin humor forzado.</p>
+          <div class="ch-audience">
+            <span class="label" style="margin-bottom:8px;display:block">Audiencia objetivo</span>
+            <span>Tech professionals 28-45 · Diseño industrial · Privacidad avanzada</span>
+          </div>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header">
+            <span class="ch-icon">HN</span>
+            <h4>Hacker News</h4>
+          </div>
+          <p class="ch-role label">Credibilidad técnica</p>
+          <p>El público más crítico y el más valioso para este producto. Si pasa el filtro de HN, el argumento técnico es sólido.</p>
+          <div class="ch-audience">
+            <span class="label" style="margin-bottom:8px;display:block">Audiencia objetivo</span>
+            <span>Ingenieros seniors · CTOs · Investigadores de seguridad</span>
+          </div>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header">
+            <span class="ch-icon amber">YT</span>
+            <h4>YouTube</h4>
+          </div>
+          <p class="ch-role label">Demostración técnica</p>
+          <p>Vídeos de demostración del kill switch, el proceso de fabricación y la arquitectura de privacidad de KoreOS. No reviews: documentales cortos.</p>
+          <div class="ch-audience">
+            <span class="label" style="margin-bottom:8px;display:block">Audiencia objetivo</span>
+            <span>Creadores tech · Audiencias de privacidad · Profesionales IT</span>
+          </div>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header">
+            <span class="ch-icon">LI</span>
+            <h4>LinkedIn</h4>
+          </div>
+          <p class="ch-role label">Ángulo empresa + B2B</p>
+          <p>Para profesionales que compran dispositivos para sus equipos o que tienen alta conciencia sobre la seguridad corporativa.</p>
+          <div class="ch-audience">
+            <span class="label" style="margin-bottom:8px;display:block">Audiencia objetivo</span>
+            <span>CISOs · Fundadores · Directivos tech</span>
+          </div>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header">
+            <span class="ch-icon amber">PR</span>
+            <h4>Press</h4>
+          </div>
+          <p class="ch-role label">Legitimidad + alcance</p>
+          <p>Wired, The Verge, Ars Technica, El País Tecnología. No notas de prensa: exclusivas con documentación técnica real.</p>
+          <div class="ch-audience">
+            <span class="label" style="margin-bottom:8px;display:block">Audiencia objetivo</span>
+            <span>Lectores tech premium · Early adopters informados</span>
+          </div>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header">
+            <span class="ch-icon">EM</span>
+            <h4>Email / Newsletter</h4>
+          </div>
+          <p class="ch-role label">Conversión y comunidad</p>
+          <p>La lista propia es el activo más valioso. Secuencia de 4 emails + newsletter mensual. Open rate objetivo: 45%+.</p>
+          <div class="ch-audience">
+            <span class="label" style="margin-bottom:8px;display:block">Audiencia objetivo</span>
+            <span>Inscritos en lista · Interesados activos</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Métricas de éxito -->
+    <section class="metrics-section">
+      <div class="section">
+        <p class="label">Métricas de éxito</p>
+        <div class="divider"></div>
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <span class="mi-phase label">Mes 1-2</span>
+            <h4>Awareness</h4>
+            <div class="mi-kpis">
+              <div class="mk"><span class="amber">10.000+</span><span>Lecturas del Manifiesto</span></div>
+              <div class="mk"><span>500+</span><span>Inscripciones lista</span></div>
+              <div class="mk"><span class="amber">3</span><span>Menciones en prensa</span></div>
+            </div>
+          </div>
+          <div class="metric-item">
+            <span class="mi-phase label">Mes 3-4</span>
+            <h4>Credibilidad</h4>
+            <div class="mi-kpis">
+              <div class="mk"><span class="amber">800+</span><span>Inscripciones acumuladas</span></div>
+              <div class="mk"><span>2</span><span>Artículos en prensa tier-1</span></div>
+              <div class="mk"><span class="amber">2.000+</span><span>Seguidores Instagram</span></div>
+            </div>
+          </div>
+          <div class="metric-item">
+            <span class="mi-phase label">Mes 5-6</span>
+            <h4>Conversión</h4>
+            <div class="mi-kpis">
+              <div class="mk"><span class="amber">1.000</span><span>Pre-órdenes cerradas</span></div>
+              <div class="mk"><span>40%+</span><span>Open rate email</span></div>
+              <div class="mk"><span class="amber">€2.499M</span><span>Revenue mínimo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .page-hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+    background: radial-gradient(ellipse 50% 50% at 80% 30%, rgba(200,169,110,0.06) 0%, transparent 60%);
+  }
+
+  h1 { font-size: clamp(40px, 6vw, 80px); line-height: 1.05; margin: 24px 0 32px; }
+  h1 em { color: var(--amber); font-style: italic; }
+  .hero-sub { font-size: 13px; color: var(--titanium-light); max-width: 520px; line-height: 1.8; }
+
+  .two-col { display: grid; grid-template-columns: 1.4fr 1fr; gap: 80px; align-items: start; }
+  h2 { font-size: clamp(24px, 3.5vw, 40px); margin-bottom: 28px; }
+  h2 em { color: var(--amber); font-style: italic; }
+  .two-col p { font-size: 13px; color: var(--titanium-light); line-height: 1.9; margin-bottom: 16px; }
+
+  .premise-aside { display: flex; flex-direction: column; gap: 2px; }
+  .pa-item { background: var(--carbon); padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; }
+  .pa-num { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--ivory); }
+
+  .dark-section { background: var(--carbon); }
+
+  /* TIMELINE */
+  .timeline { display: flex; flex-direction: column; gap: 2px; }
+
+  .tm-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 0;
+    background: var(--black);
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .tm-meta {
+    padding: 32px 24px;
+    border-right: 1px solid rgba(200,169,110,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tm-month { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--titanium); }
+
+  .tm-content { padding: 32px 40px; }
+
+  .tm-content h3 { font-size: 22px; color: var(--ivory); margin-bottom: 16px; }
+
+  .tm-content p { font-size: 12px; color: var(--titanium-light); line-height: 1.8; margin-bottom: 12px; }
+
+  .tm-kpis {
+    display: flex;
+    gap: 24px;
+    margin: 20px 0;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .kpi { display: flex; flex-direction: column; gap: 4px; }
+  .kpi span:first-child { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--titanium); }
+  .kpi span:last-child { font-size: 9px; letter-spacing: 0.15em; color: var(--titanium); text-transform: uppercase; }
+
+  .tm-actions ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .tm-actions li { font-size: 11px; color: var(--titanium); line-height: 1.6; padding-left: 12px; position: relative; }
+  .tm-actions li::before { content: '—'; position: absolute; left: 0; color: var(--amber); }
+
+  /* CHANNELS */
+  .channels-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+
+  .channel { background: var(--carbon); padding: 32px; border: 1px solid rgba(255,255,255,0.04); }
+
+  .ch-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .ch-icon {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--titanium);
+    width: 32px; height: 32px;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .ch-icon.amber { border-color: rgba(200,169,110,0.3); color: var(--amber); }
+
+  .channel h4 { font-size: 18px; color: var(--ivory); }
+  .ch-role { margin-bottom: 12px; display: block; }
+  .channel p { font-size: 11px; color: var(--titanium); line-height: 1.7; margin-bottom: 20px; }
+  .ch-audience span:last-child { font-size: 10px; color: var(--titanium-light); line-height: 1.6; }
+
+  /* METRICS */
+  .metrics-section { background: var(--carbon); border-top: 1px solid rgba(200,169,110,0.1); }
+  .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+  .metric-item { background: var(--black); padding: 40px 32px; }
+  .mi-phase { display: block; margin-bottom: 12px; }
+  .metric-item h4 { font-size: 22px; color: var(--ivory); margin-bottom: 24px; }
+  .mi-kpis { display: flex; flex-direction: column; gap: 12px; }
+  .mk { display: flex; flex-direction: column; gap: 4px; }
+  .mk span:first-child { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--titanium); }
+  .mk span:last-child { font-size: 10px; color: var(--titanium); letter-spacing: 0.15em; text-transform: uppercase; }
+
+  @media (max-width: 900px) {
+    .two-col { grid-template-columns: 1fr; gap: 40px; }
+    .tm-item { grid-template-columns: 1fr; }
+    .tm-meta { border-right: none; border-bottom: 1px solid rgba(200,169,110,0.1); padding: 20px 24px; flex-direction: row; align-items: center; gap: 16px; }
+    .tm-content { padding: 24px; }
+    .channels-grid { grid-template-columns: 1fr 1fr; }
+    .metrics-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 600px) {
+    .channels-grid { grid-template-columns: 1fr; }
+  }
+</style>
