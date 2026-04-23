@@ -12,6 +12,7 @@ import Footer from '../components/Footer.astro';
       <div class="divider"></div>
       <h1>Lista de espera<br/><em>Founders Edition.</em></h1>
       <p class="hero-sub">Esta página muestra la landing de captación y el email de bienvenida que reciben los inscritos. Ambos son piezas de comunicación clave del lanzamiento.</p>
+      <a href="https://getkore.es" target="_blank" rel="noopener" class="cta-btn">INSCRIBIRSE</a>
     </div>
   </header>
 
@@ -282,7 +283,22 @@ import Footer from '../components/Footer.astro';
   h1 { font-size: clamp(40px, 6vw, 80px); line-height: 1.05; margin: 24px 0 32px; }
   h1 em { color: var(--amber); font-style: italic; }
 
-  .hero-sub { font-size: 13px; color: var(--titanium-light); max-width: 520px; line-height: 1.8; }
+  .hero-sub { font-size: 13px; color: var(--titanium-light); max-width: 520px; line-height: 1.8; margin-bottom: 36px; }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--amber);
+    color: var(--black);
+    padding: 16px 48px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    transition: background 0.2s;
+  }
+
+  .cta-btn:hover { background: var(--amber-dark); }
 
   .section-desc { font-size: 12px; color: var(--titanium); margin-bottom: 40px; line-height: 1.8; }
 
