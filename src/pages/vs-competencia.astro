@@ -8,10 +8,10 @@ import Footer from '../components/Footer.astro';
 
   <header class="page-hero">
     <div class="section" style="padding-top:140px">
-      <p class="label">06 — Kore vs. Competencia</p>
+      <p class="label"><span data-es>06 — Kore vs. Competencia</span><span data-en>06 — Kore vs. Competition</span></p>
       <div class="divider"></div>
-      <h1>Por qué Kore gana<br/><em>donde otros no pueden.</em></h1>
-      <p class="hero-sub">No competimos en el mismo terreno que Apple o Samsung. Ganamos en dimensiones que ellos han elegido ignorar porque no encajan con su modelo de negocio.</p>
+      <h1><span data-es>Por qué Kore gana<br/><em>donde otros no pueden.</em></span><span data-en>Why Kore wins<br/><em>where others cannot.</em></span></h1>
+      <p class="hero-sub" data-es>No competimos en el mismo terreno que Apple o Samsung. Ganamos en dimensiones que ellos han elegido ignorar porque no encajan con su modelo de negocio.</p><p class="hero-sub" data-en>We don't compete on the same ground as Apple or Samsung. We win in dimensions they have chosen to ignore because they don't fit their business model.</p>
     </div>
   </header>
 
@@ -19,29 +19,29 @@ import Footer from '../components/Footer.astro';
 
     <!-- El argumento central -->
     <section class="section">
-      <p class="label">El argumento central</p>
+      <p class="label"><span data-es>El argumento central</span><span data-en>The core argument</span></p>
       <div class="divider"></div>
       <div class="argument-block">
         <div class="arg-main">
-          <h2>Ellos no pueden<br/><em>darte lo que damos nosotros.</em></h2>
-          <p>No es que Apple o Samsung sean malas empresas. Son empresas excelentes en lo que hacen: construir ecosistemas que maximizan el tiempo de pantalla, la dependencia de sus servicios y los ingresos por datos y suscripciones.</p>
-          <p>El problema es que ese modelo de negocio es estructuralmente incompatible con la propiedad real, la privacidad verdadera y la permanencia del dispositivo.</p>
-          <p>Para que Apple te ofrezca lo que Kore ofrece, Apple tendría que destruir su modelo de negocio. Por eso no lo hacen. No es falta de voluntad: es incompatibilidad estructural.</p>
+          <h2><span data-es>Ellos no pueden<br/><em>darte lo que damos nosotros.</em></span><span data-en>They cannot<br/><em>give you what we give you.</em></span></h2>
+          <p data-es>No es que Apple o Samsung sean malas empresas. Son empresas excelentes en lo que hacen: construir ecosistemas que maximizan el tiempo de pantalla, la dependencia de sus servicios y los ingresos por datos y suscripciones.</p><p data-en>It's not that Apple or Samsung are bad companies. They are excellent companies at what they do: building ecosystems that maximise screen time, dependency on their services and revenues from data and subscriptions.</p>
+          <p data-es>El problema es que ese modelo de negocio es estructuralmente incompatible con la propiedad real, la privacidad verdadera y la permanencia del dispositivo.</p><p data-en>The problem is that that business model is structurally incompatible with real ownership, true privacy and device permanence.</p>
+          <p data-es>Para que Apple te ofrezca lo que Kore ofrece, Apple tendría que destruir su modelo de negocio. Por eso no lo hacen. No es falta de voluntad: es incompatibilidad estructural.</p><p data-en>For Apple to offer you what Kore offers, Apple would have to destroy its business model. That is why they don't. It is not lack of will: it is structural incompatibility.</p>
         </div>
         <div class="arg-visual">
           <div class="incompatibility">
-            <h4 class="titanium label" style="margin-bottom:16px">Por qué la industria no puede imitarnos</h4>
+            <h4 class="titanium label" style="margin-bottom:16px"><span data-es>Por qué la industria no puede imitarnos</span><span data-en>Why the industry cannot copy us</span></h4>
             <div class="ic-item">
               <span class="ic-company">Apple</span>
-              <p>iCloud, App Store (30%), Apple Intelligence, telemetría son ~60% de los ingresos. Ofrecer privacidad real destruiría el negocio.</p>
+              <p data-es>iCloud, App Store (30%), Apple Intelligence, telemetría son ~60% de los ingresos. Ofrecer privacidad real destruiría el negocio.</p><p data-en>iCloud, App Store (30%), Apple Intelligence, telemetry are ~60% of revenues. Offering real privacy would destroy the business.</p>
             </div>
             <div class="ic-item">
               <span class="ic-company">Samsung</span>
-              <p>Google Services, Samsung Pay, Samsung Health. Cada servicio preinstalado representa revenue. La privacidad es el producto que venden a terceros.</p>
+              <p data-es>Google Services, Samsung Pay, Samsung Health. Cada servicio preinstalado representa revenue. La privacidad es el producto que venden a terceros.</p><p data-en>Google Services, Samsung Pay, Samsung Health. Each pre-installed service represents revenue. Privacy is the product they sell to third parties.</p>
             </div>
             <div class="ic-item">
               <span class="ic-company">Google (Pixel)</span>
-              <p>Google es la empresa de publicidad más grande del mundo. Su teléfono es un dispositivo de recolección de datos por diseño. No existe versión sin esto.</p>
+              <p data-es>Google es la empresa de publicidad más grande del mundo. Su teléfono es un dispositivo de recolección de datos por diseño. No existe versión sin esto.</p><p data-en>Google is the world's largest advertising company. Their phone is a data collection device by design. There is no version without this.</p>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ import Footer from '../components/Footer.astro';
     <!-- Tabla comparativa -->
     <section class="dark-section">
       <div class="section">
-        <p class="label">Comparativa directa</p>
+        <p class="label"><span data-es>Comparativa directa</span><span data-en>Direct comparison</span></p>
         <div class="divider"></div>
 
         <div class="comp-table">
@@ -76,21 +76,21 @@ import Footer from '../components/Footer.astro';
           </div>
 
           {[
-            { feature: 'Propiedad real del hardware', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
-            { feature: 'Cero datos enviados (verificado)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
-            { feature: 'Kill switch físico (hardware)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
-            { feature: 'Reparable por el usuario', kore: '✓', apple: '~', samsung: '~', fair: '✓' },
-            { feature: '7 años de soporte garantizado', kore: '✓', apple: '~6', samsung: '~5', fair: '✓' },
-            { feature: 'Código auditable', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
-            { feature: 'Sin telemetría de uso', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
-            { feature: 'Número de serie único grabado', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
-            { feature: 'Clave de cifrado solo en dispositivo', kore: '✓', apple: '~', samsung: '✗', fair: '✗' },
-            { feature: 'Sin servicios preinstalados', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
-            { feature: 'Edición limitada (exclusividad)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
-            { feature: 'Precio', kore: '€2.499+', apple: '€1.329+', samsung: '€1.449+', fair: '€699+' },
+            { feature: 'Propiedad real del hardware', featureEn: 'Real hardware ownership', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
+            { feature: 'Cero datos enviados (verificado)', featureEn: 'Zero data sent (verified)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Kill switch físico (hardware)', featureEn: 'Physical kill switch (hardware)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Reparable por el usuario', featureEn: 'User-repairable', kore: '✓', apple: '~', samsung: '~', fair: '✓' },
+            { feature: '7 años de soporte garantizado', featureEn: '7 years of guaranteed support', kore: '✓', apple: '~6', samsung: '~5', fair: '✓' },
+            { feature: 'Código auditable', featureEn: 'Auditable code', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
+            { feature: 'Sin telemetría de uso', featureEn: 'No usage telemetry', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Número de serie único grabado', featureEn: 'Unique engraved serial number', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Clave de cifrado solo en dispositivo', featureEn: 'Encryption key on-device only', kore: '✓', apple: '~', samsung: '✗', fair: '✗' },
+            { feature: 'Sin servicios preinstalados', featureEn: 'No pre-installed services', kore: '✓', apple: '✗', samsung: '✗', fair: '~' },
+            { feature: 'Edición limitada (exclusividad)', featureEn: 'Limited edition (exclusivity)', kore: '✓', apple: '✗', samsung: '✗', fair: '✗' },
+            { feature: 'Precio', featureEn: 'Price', kore: '€2.499+', apple: '€1.329+', samsung: '€1.449+', fair: '€699+' },
           ].map(row => (
             <div class="ct-row">
-              <div class="ct-feature-name">{row.feature}</div>
+              <div class="ct-feature-name"><span data-es>{row.feature}</span><span data-en>{row.featureEn}</span></div>
               <div class:list={['ct-val', 'val-kore', { 'val-yes': row.kore === '✓', 'val-no': row.kore === '✗' }]}>{row.kore}</div>
               <div class:list={['ct-val', { 'val-yes': row.apple === '✓', 'val-no': row.apple === '✗', 'val-mid': row.apple !== '✓' && row.apple !== '✗' }]}>{row.apple}</div>
               <div class:list={['ct-val', { 'val-yes': row.samsung === '✓', 'val-no': row.samsung === '✗', 'val-mid': row.samsung !== '✓' && row.samsung !== '✗' }]}>{row.samsung}</div>
@@ -99,38 +99,38 @@ import Footer from '../components/Footer.astro';
           ))}
         </div>
 
-        <p class="table-note label">~ = Parcial o con condiciones. ✓ = Completo. ✗ = No disponible.</p>
+        <p class="table-note label"><span data-es>~ = Parcial o con condiciones. ✓ = Completo. ✗ = No disponible.</span><span data-en>~ = Partial or with conditions. ✓ = Full. ✗ = Not available.</span></p>
       </div>
     </section>
 
     <!-- Análisis por competidor -->
     <section class="section">
-      <p class="label">Análisis en profundidad</p>
+      <p class="label"><span data-es>Análisis en profundidad</span><span data-en>In-depth analysis</span></p>
       <div class="divider"></div>
       <div class="competitor-analysis">
 
         <div class="ca-item">
           <div class="ca-header">
             <span class="ca-brand">Apple iPhone</span>
-            <span class="ca-verdict label">Bueno en UX. Fallido en propiedad.</span>
+            <span class="ca-verdict label"><span data-es>Bueno en UX. Fallido en propiedad.</span><span data-en>Good in UX. Failed in ownership.</span></span>
           </div>
           <div class="ca-body">
             <div class="ca-what">
-              <h4>Lo que hace bien</h4>
+              <h4><span data-es>Lo que hace bien</span><span data-en>What they do well</span></h4>
               <ul>
-                <li>Ecosistema integrado sin fricción</li>
-                <li>Privacidad relativa dentro del ecosistema</li>
-                <li>Soporte ~6 años desde lanzamiento</li>
-                <li>Diseño premium consistente</li>
+                <li data-es>Ecosistema integrado sin fricción</li><li data-en>Frictionless integrated ecosystem</li>
+                <li data-es>Privacidad relativa dentro del ecosistema</li><li data-en>Relative privacy within the ecosystem</li>
+                <li data-es>Soporte ~6 años desde lanzamiento</li><li data-en>Support ~6 years from launch</li>
+                <li data-es>Diseño premium consistente</li><li data-en>Consistent premium design</li>
               </ul>
             </div>
             <div class="ca-what gap">
-              <h4>Donde Kore gana</h4>
+              <h4><span data-es>Donde Kore gana</span><span data-en>Where Kore wins</span></h4>
               <ul>
-                <li>Apple sigue recopilando datos de uso, diagnósticos, Siri, App Store. "Privacidad" es su marketing, no su arquitectura.</li>
-                <li>No puedes reparar un iPhone sin perder garantía o usar piezas no certificadas (iCloud Lock).</li>
-                <li>Apple puede desactivar remotamente un dispositivo. Tú no eres el propietario real.</li>
-                <li>El ecosistema te atrapa: salir de iOS tiene un coste diseñado deliberadamente.</li>
+                <li data-es>Apple sigue recopilando datos de uso, diagnósticos, Siri, App Store. "Privacidad" es su marketing, no su arquitectura.</li><li data-en>Apple still collects usage data, diagnostics, Siri, App Store. "Privacy" is their marketing, not their architecture.</li>
+                <li data-es>No puedes reparar un iPhone sin perder garantía o usar piezas no certificadas (iCloud Lock).</li><li data-en>You cannot repair an iPhone without voiding the warranty or using non-certified parts (iCloud Lock).</li>
+                <li data-es>Apple puede desactivar remotamente un dispositivo. Tú no eres el propietario real.</li><li data-en>Apple can remotely deactivate a device. You are not the real owner.</li>
+                <li data-es>El ecosistema te atrapa: salir de iOS tiene un coste diseñado deliberadamente.</li><li data-en>The ecosystem traps you: leaving iOS has a deliberately designed cost.</li>
               </ul>
             </div>
           </div>
@@ -139,25 +139,25 @@ import Footer from '../components/Footer.astro';
         <div class="ca-item">
           <div class="ca-header">
             <span class="ca-brand">Samsung Galaxy</span>
-            <span class="ca-verdict label">Hardware premium. Datos comprometidos.</span>
+            <span class="ca-verdict label"><span data-es>Hardware premium. Datos comprometidos.</span><span data-en>Premium hardware. Compromised data.</span></span>
           </div>
           <div class="ca-body">
             <div class="ca-what">
-              <h4>Lo que hace bien</h4>
+              <h4><span data-es>Lo que hace bien</span><span data-en>What they do well</span></h4>
               <ul>
-                <li>Hardware de alta gama consistente</li>
-                <li>Más personalizable que iOS</li>
-                <li>Múltiples gamas de precio</li>
-                <li>Mejorando en soporte (5 años)</li>
+                <li data-es>Hardware de alta gama consistente</li><li data-en>Consistent high-end hardware</li>
+                <li data-es>Más personalizable que iOS</li><li data-en>More customisable than iOS</li>
+                <li data-es>Múltiples gamas de precio</li><li data-en>Multiple price ranges</li>
+                <li data-es>Mejorando en soporte (5 años)</li><li data-en>Improving on support (5 years)</li>
               </ul>
             </div>
             <div class="ca-what gap">
-              <h4>Donde Kore gana</h4>
+              <h4><span data-es>Donde Kore gana</span><span data-en>Where Kore wins</span></h4>
               <ul>
-                <li>Samsung + Google: dos capas de recolección de datos. Samsung Ads, Samsung Health, Google Services.</li>
-                <li>Android de Samsung viene con 40+ apps preinstaladas que no puedes eliminar completamente.</li>
-                <li>One UI comparte datos con Samsung y socios. El GDPR ha multado a Samsung múltiples veces.</li>
-                <li>Aunque puedes instalar ROMs alternativas, void la garantía y pierdes funciones de hardware.</li>
+                <li data-es>Samsung + Google: dos capas de recolección de datos. Samsung Ads, Samsung Health, Google Services.</li><li data-en>Samsung + Google: two layers of data collection. Samsung Ads, Samsung Health, Google Services.</li>
+                <li data-es>Android de Samsung viene con 40+ apps preinstaladas que no puedes eliminar completamente.</li><li data-en>Samsung's Android comes with 40+ pre-installed apps you cannot fully remove.</li>
+                <li data-es>One UI comparte datos con Samsung y socios. El GDPR ha multado a Samsung múltiples veces.</li><li data-en>One UI shares data with Samsung and partners. The GDPR has fined Samsung multiple times.</li>
+                <li data-es>Aunque puedes instalar ROMs alternativas, void la garantía y pierdes funciones de hardware.</li><li data-en>Although you can install alternative ROMs, it voids the warranty and you lose hardware features.</li>
               </ul>
             </div>
           </div>
@@ -166,24 +166,24 @@ import Footer from '../components/Footer.astro';
         <div class="ca-item">
           <div class="ca-header">
             <span class="ca-brand">Google Pixel</span>
-            <span class="ca-verdict label">Honesto al menos: son Google.</span>
+            <span class="ca-verdict label"><span data-es>Honesto al menos: son Google.</span><span data-en>Honest at least: they're Google.</span></span>
           </div>
           <div class="ca-body">
             <div class="ca-what">
-              <h4>Lo que hace bien</h4>
+              <h4><span data-es>Lo que hace bien</span><span data-en>What they do well</span></h4>
               <ul>
-                <li>Android puro, sin capas de fabricante</li>
-                <li>Actualizaciones rápidas</li>
-                <li>Buena cámara computacional</li>
-                <li>Soporte para ROMs alternativas</li>
+                <li data-es>Android puro, sin capas de fabricante</li><li data-en>Pure Android, no manufacturer layers</li>
+                <li data-es>Actualizaciones rápidas</li><li data-en>Fast updates</li>
+                <li data-es>Buena cámara computacional</li><li data-en>Good computational camera</li>
+                <li data-es>Soporte para ROMs alternativas</li><li data-en>Support for alternative ROMs</li>
               </ul>
             </div>
             <div class="ca-what gap">
-              <h4>Donde Kore gana</h4>
+              <h4><span data-es>Donde Kore gana</span><span data-en>Where Kore wins</span></h4>
               <ul>
-                <li>Google es, por definición, una empresa de publicidad. Usar un Pixel sin Google Services es técnicamente posible pero no es lo que venden.</li>
-                <li>Tensor chip tiene Google Neural Core integrado. Los datos de IA procesados en dispositivo pueden sincronizarse.</li>
-                <li>El modelo de negocio de Google requiere tus datos. No es una opción: es la empresa.</li>
+                <li data-es>Google es, por definición, una empresa de publicidad. Usar un Pixel sin Google Services es técnicamente posible pero no es lo que venden.</li><li data-en>Google is, by definition, an advertising company. Using a Pixel without Google Services is technically possible but not what they sell.</li>
+                <li data-es>Tensor chip tiene Google Neural Core integrado. Los datos de IA procesados en dispositivo pueden sincronizarse.</li><li data-en>Tensor chip has integrated Google Neural Core. On-device processed AI data can be synchronised.</li>
+                <li data-es>El modelo de negocio de Google requiere tus datos. No es una opción: es la empresa.</li><li data-en>Google's business model requires your data. It is not an option: it is the company.</li>
               </ul>
             </div>
           </div>
@@ -192,25 +192,25 @@ import Footer from '../components/Footer.astro';
         <div class="ca-item">
           <div class="ca-header">
             <span class="ca-brand">Fairphone</span>
-            <span class="ca-verdict label">El competidor más cercano. Diferente misión.</span>
+            <span class="ca-verdict label"><span data-es>El competidor más cercano. Diferente misión.</span><span data-en>The closest competitor. Different mission.</span></span>
           </div>
           <div class="ca-body">
             <div class="ca-what">
-              <h4>Lo que hace bien</h4>
+              <h4><span data-es>Lo que hace bien</span><span data-en>What they do well</span></h4>
               <ul>
-                <li>Reparabilidad real, piezas disponibles</li>
-                <li>Ética en cadena de suministro</li>
-                <li>5 años de soporte</li>
-                <li>Precio accesible (€699)</li>
+                <li data-es>Reparabilidad real, piezas disponibles</li><li data-en>Real repairability, parts available</li>
+                <li data-es>Ética en cadena de suministro</li><li data-en>Ethical supply chain</li>
+                <li data-es>5 años de soporte</li><li data-en>5 years of support</li>
+                <li data-es>Precio accesible (€699)</li><li data-en>Accessible price (€699)</li>
               </ul>
             </div>
             <div class="ca-what gap">
-              <h4>Donde Kore es diferente</h4>
+              <h4><span data-es>Donde Kore es diferente</span><span data-en>Where Kore is different</span></h4>
               <ul>
-                <li>Fairphone sigue usando Android con Google Services. La privacidad no es su misión: la sostenibilidad y la ética de fabricación sí.</li>
-                <li>Diferentes mercados: Fairphone apunta a conciencia social, Kore apunta a privacidad y propiedad.</li>
-                <li>El titanio y la exclusividad de 1.000 unidades posicionan Kore como objeto premium, no como alternativa ética de gama media.</li>
-                <li>Podría existir un cliente que use ambos en diferentes momentos de su vida.</li>
+                <li data-es>Fairphone sigue usando Android con Google Services. La privacidad no es su misión: la sostenibilidad y la ética de fabricación sí.</li><li data-en>Fairphone still uses Android with Google Services. Privacy is not their mission: sustainability and manufacturing ethics are.</li>
+                <li data-es>Diferentes mercados: Fairphone apunta a conciencia social, Kore apunta a privacidad y propiedad.</li><li data-en>Different markets: Fairphone targets social consciousness, Kore targets privacy and ownership.</li>
+                <li data-es>El titanio y la exclusividad de 1.000 unidades posicionan Kore como objeto premium, no como alternativa ética de gama media.</li><li data-en>The titanium and the exclusivity of 1,000 units position Kore as a premium object, not a mid-range ethical alternative.</li>
+                <li data-es>Podría existir un cliente que use ambos en diferentes momentos de su vida.</li><li data-en>There could be a customer who uses both at different points in their life.</li>
               </ul>
             </div>
           </div>
@@ -221,32 +221,32 @@ import Footer from '../components/Footer.astro';
 
     <!-- Objeciones -->
     <section class="section" style="padding-top:0">
-      <p class="label">Objeciones comunes y respuestas</p>
+      <p class="label"><span data-es>Objeciones comunes y respuestas</span><span data-en>Common objections and answers</span></p>
       <div class="divider"></div>
       <div class="objections">
 
         <div class="obj-item">
-          <h4>"€2.499 es demasiado caro para un smartphone"</h4>
-          <p>Es el precio de un ordenador portátil de gama media-alta. Si valoras tu privacidad, tus datos y la propiedad real del objeto que llevas encima 16h al día, €2.499 es una decisión razonada, no un lujo impulsivo.</p>
-          <p>Además: un Kore dura 7 años con soporte garantizado. €2.499 / 7 años = €357/año. Un iPhone Pro nuevo cada 2-3 años = €500+/año.</p>
+          <h4 data-es>"€2.499 es demasiado caro para un smartphone"</h4><h4 data-en>"€2,499 is too expensive for a smartphone"</h4>
+          <p data-es>Es el precio de un ordenador portátil de gama media-alta. Si valoras tu privacidad, tus datos y la propiedad real del objeto que llevas encima 16h al día, €2.499 es una decisión razonada, no un lujo impulsivo.</p><p data-en>It is the price of a mid-to-high-end laptop. If you value your privacy, your data and real ownership of the object you carry for 16h a day, €2,499 is a reasoned decision, not an impulsive luxury.</p>
+          <p data-es>Además: un Kore dura 7 años con soporte garantizado. €2.499 / 7 años = €357/año. Un iPhone Pro nuevo cada 2-3 años = €500+/año.</p><p data-en>Also: a Kore lasts 7 years with guaranteed support. €2,499 / 7 years = €357/year. A new iPhone Pro every 2-3 years = €500+/year.</p>
         </div>
 
         <div class="obj-item">
-          <h4>"No tiene el ecosistema de apps de iOS/Android"</h4>
-          <p>KoreOS es compatible con aplicaciones Android (APKs). Las apps que la gente usa realmente —mensajería, navegador, mapas, banca— tienen alternativas privadas que funcionan en KoreOS.</p>
-          <p>Lo que no tendrás: TikTok integrado, 30 apps de Samsung preinstaladas y servicios de Google que no pediste. Muchos considerarán eso una ventaja.</p>
+          <h4 data-es>"No tiene el ecosistema de apps de iOS/Android"</h4><h4 data-en>"It doesn't have the iOS/Android app ecosystem"</h4>
+          <p data-es>KoreOS es compatible con aplicaciones Android (APKs). Las apps que la gente usa realmente —mensajería, navegador, mapas, banca— tienen alternativas privadas que funcionan en KoreOS.</p><p data-en>KoreOS is compatible with Android applications (APKs). The apps people actually use — messaging, browser, maps, banking — have private alternatives that work on KoreOS.</p>
+          <p data-es>Lo que no tendrás: TikTok integrado, 30 apps de Samsung preinstaladas y servicios de Google que no pediste. Muchos considerarán eso una ventaja.</p><p data-en>What you won't have: integrated TikTok, 30 pre-installed Samsung apps and Google services you didn't ask for. Many will consider that an advantage.</p>
         </div>
 
         <div class="obj-item">
-          <h4>"1.000 unidades es demasiado pequeño para ser sostenible"</h4>
-          <p>1.000 unidades × €2.499 = €2,499M de revenue mínimo. Con márgenes de hardware premium y sin costes de marketing masivo, la Founders Edition es económicamente sostenible.</p>
-          <p>No diseñamos para escalar a millones. Diseñamos para hacer 1.000 unidades perfectas y honrar cada uno de los 1.000 contratos que firmamos.</p>
+          <h4 data-es>"1.000 unidades es demasiado pequeño para ser sostenible"</h4><h4 data-en>"1,000 units is too small to be sustainable"</h4>
+          <p data-es>1.000 unidades × €2.499 = €2,499M de revenue mínimo. Con márgenes de hardware premium y sin costes de marketing masivo, la Founders Edition es económicamente sostenible.</p><p data-en>1,000 units × €2,499 = €2.499M minimum revenue. With premium hardware margins and without mass marketing costs, the Founders Edition is economically sustainable.</p>
+          <p data-es>No diseñamos para escalar a millones. Diseñamos para hacer 1.000 unidades perfectas y honrar cada uno de los 1.000 contratos que firmamos.</p><p data-en>We don't design to scale to millions. We design to make 1,000 perfect units and honour each of the 1,000 contracts we sign.</p>
         </div>
 
         <div class="obj-item">
-          <h4>"¿Cómo sé que realmente no enviáis datos?"</h4>
-          <p>Auditoría independiente anual publicada en abierto. Código de KoreOS auditable por cualquier investigador de seguridad. El kill switch físico es verificable: si el circuito está abierto, la señal no pasa. Física, no promesas.</p>
-          <p>Apple dice "privacidad" pero no publica auditorías de su telemetría. Nosotros sí.</p>
+          <h4 data-es>"¿Cómo sé que realmente no enviáis datos?"</h4><h4 data-en>"How do I know you really don't send data?"</h4>
+          <p data-es>Auditoría independiente anual publicada en abierto. Código de KoreOS auditable por cualquier investigador de seguridad. El kill switch físico es verificable: si el circuito está abierto, la señal no pasa. Física, no promesas.</p><p data-en>Annual independent audit published openly. KoreOS code auditable by any security researcher. The physical kill switch is verifiable: if the circuit is open, the signal does not pass. Physics, not promises.</p>
+          <p data-es>Apple dice "privacidad" pero no publica auditorías de su telemetría. Nosotros sí.</p><p data-en>Apple says "privacy" but does not publish audits of its telemetry. We do.</p>
         </div>
 
       </div>

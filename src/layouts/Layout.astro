@@ -6,7 +6,7 @@ interface Props {
 const { title, description = 'Kore — El smartphone que es tuyo de verdad. Documento interno del equipo.' } = Astro.props;
 ---
 <!doctype html>
-<html lang="es">
+<html lang="es" id="root">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,6 +53,9 @@ const { title, description = 'Kore — El smartphone que es tuyo de verdad. Docu
     }
 
     a { color: inherit; text-decoration: none; }
+
+    #root[lang="es"] [data-en] { display: none !important; }
+    #root[lang="en"] [data-es] { display: none !important; }
 
     ::selection { background: var(--amber); color: var(--black); }
 

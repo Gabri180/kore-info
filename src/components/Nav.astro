@@ -23,6 +23,9 @@ const links = [
         </li>
       ))}
     </ul>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span id="langLabel">EN</span>
+    </button>
     <button class="menu-toggle" id="menuToggle" aria-label="Menú">
       <span></span><span></span><span></span>
     </button>
@@ -95,6 +98,20 @@ const links = [
     border-bottom-color: var(--amber);
   }
 
+  .lang-toggle {
+    background: none;
+    border: 1px solid rgba(200,169,110,0.3);
+    color: var(--amber);
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    flex-shrink: 0;
+  }
+  .lang-toggle:hover { background: var(--amber); color: var(--black); }
+
   .menu-toggle {
     display: none;
     flex-direction: column;
@@ -145,4 +162,17 @@ const links = [
   const toggle = document.getElementById('menuToggle');
   const menu = document.getElementById('mobileMenu');
   toggle?.addEventListener('click', () => menu?.classList.toggle('open'));
+
+  const root = document.getElementById('root');
+  const langBtn = document.getElementById('langToggle');
+  const langLabel = document.getElementById('langLabel');
+  const saved = localStorage.getItem('lang');
+  if (saved && root) { root.lang = saved; if (langLabel) langLabel.textContent = saved === 'en' ? 'ES' : 'EN'; }
+  langBtn?.addEventListener('click', () => {
+    if (!root) return;
+    const next = root.lang === 'es' ? 'en' : 'es';
+    root.lang = next;
+    if (langLabel) langLabel.textContent = next === 'en' ? 'ES' : 'EN';
+    localStorage.setItem('lang', next);
+  });
 </script>

@@ -9,83 +9,115 @@ import Footer from '../components/Footer.astro';
   <header class="hero">
     <div class="hero-inner">
       <p class="label">info.getkore.es — Documento interno</p>
-      <h1>El smartphone<br/><em>que es tuyo</em><br/>de verdad.</h1>
-      <p class="sub">Esta web recoge todo lo que necesitas saber sobre Kore:<br/>filosofía, producto, estrategia y visión de equipo.</p>
+      <h1>
+        <span data-es>El smartphone<br/><em>que es tuyo</em><br/>de verdad.</span>
+        <span data-en>The smartphone<br/><em>that is truly</em><br/>yours.</span>
+      </h1>
+      <p class="sub" data-es>Esta web recoge todo lo que necesitas saber sobre Kore:<br/>filosofía, producto, estrategia y visión de equipo.</p>
+      <p class="sub" data-en>This site covers everything you need to know about Kore:<br/>philosophy, product, strategy and team vision.</p>
       <div class="stats">
         <div class="stat">
-          <span class="num amber">1.000</span>
-          <span class="lbl">Unidades totales</span>
+          <span class="num amber">1,000</span>
+          <span class="lbl" data-es>Unidades totales</span>
+          <span class="lbl" data-en>Total units</span>
         </div>
         <div class="stat">
           <span class="num">7</span>
-          <span class="lbl">Años de actualizaciones</span>
+          <span class="lbl" data-es>Años de actualizaciones</span>
+          <span class="lbl" data-en>Years of updates</span>
         </div>
         <div class="stat">
           <span class="num">0</span>
-          <span class="lbl">Datos enviados</span>
+          <span class="lbl" data-es>Datos enviados</span>
+          <span class="lbl" data-en>Data sent</span>
         </div>
         <div class="stat">
-          <span class="num amber">€2.499</span>
-          <span class="lbl">Desde</span>
+          <span class="num amber">€2,499</span>
+          <span class="lbl" data-es>Desde</span>
+          <span class="lbl" data-en>Starting from</span>
         </div>
       </div>
     </div>
   </header>
 
   <main class="section">
-    <p class="label" style="margin-bottom:48px">Navega por las secciones</p>
+    <p class="label" style="margin-bottom:48px">
+      <span data-es>Navega por las secciones</span>
+      <span data-en>Browse sections</span>
+    </p>
     <div class="grid">
 
       <a href="/empresa" class="card">
         <span class="card-num label">01</span>
-        <h2>La Empresa</h2>
-        <p>Quiénes somos, por qué existimos y qué nos hace diferentes desde la base.</p>
-        <span class="card-link amber">Ver más →</span>
+        <h2 data-es>La Empresa</h2>
+        <h2 data-en>The Company</h2>
+        <p data-es>Quiénes somos, por qué existimos y qué nos hace diferentes desde la base.</p>
+        <p data-en>Who we are, why we exist and what makes us different from the ground up.</p>
+        <span class="card-link amber" data-es>Ver más →</span>
+        <span class="card-link amber" data-en>Read more →</span>
       </a>
 
       <a href="/filosofia" class="card">
         <span class="card-num label">02</span>
-        <h2>Filosofía</h2>
-        <p>Los principios que guían cada decisión de diseño, producto y negocio.</p>
-        <span class="card-link amber">Ver más →</span>
+        <h2 data-es>Filosofía</h2>
+        <h2 data-en>Philosophy</h2>
+        <p data-es>Los principios que guían cada decisión de diseño, producto y negocio.</p>
+        <p data-en>The principles guiding every design, product and business decision.</p>
+        <span class="card-link amber" data-es>Ver más →</span>
+        <span class="card-link amber" data-en>Read more →</span>
       </a>
 
       <a href="/manifiesto" class="card">
         <span class="card-num label">03</span>
-        <h2>Manifiesto</h2>
-        <p>El texto fundacional de Kore. Por qué el smartphone actual no es tuyo y qué hacemos al respecto.</p>
-        <span class="card-link amber">Ver más →</span>
+        <h2>Manifesto</h2>
+        <p data-es>El texto fundacional de Kore. Por qué el smartphone actual no es tuyo y qué hacemos al respecto.</p>
+        <p data-en>Kore's founding text. Why your current smartphone isn't really yours — and what we do about it.</p>
+        <span class="card-link amber" data-es>Ver más →</span>
+        <span class="card-link amber" data-en>Read more →</span>
       </a>
 
       <a href="/inscripcion" class="card">
         <span class="card-num label">04</span>
-        <h2>Página de Inscripción</h2>
-        <p>La landing de lista de espera con el flujo completo de email de bienvenida.</p>
-        <span class="card-link amber">Ver más →</span>
+        <h2 data-es>Página de Inscripción</h2>
+        <h2 data-en>Signup Page</h2>
+        <p data-es>La landing de lista de espera con el flujo completo de email de bienvenida.</p>
+        <p data-en>The waitlist landing page with the full welcome email flow.</p>
+        <span class="card-link amber" data-es>Ver más →</span>
+        <span class="card-link amber" data-en>Read more →</span>
       </a>
 
       <a href="/estrategia" class="card">
         <span class="card-num label">05</span>
-        <h2>Estrategia de Lanzamiento</h2>
-        <p>Plan de 6 meses: canales, audiencias, hitos y métricas de éxito.</p>
-        <span class="card-link amber">Ver más →</span>
+        <h2 data-es>Estrategia de Lanzamiento</h2>
+        <h2 data-en>Launch Strategy</h2>
+        <p data-es>Plan de 6 meses: canales, audiencias, hitos y métricas de éxito.</p>
+        <p data-en>6-month plan: channels, audiences, milestones and success metrics.</p>
+        <span class="card-link amber" data-es>Ver más →</span>
+        <span class="card-link amber" data-en>Read more →</span>
       </a>
 
       <a href="/vs-competencia" class="card">
         <span class="card-num label">06</span>
-        <h2>Kore vs. Competencia</h2>
-        <p>Por qué Kore gana donde Apple, Samsung y otros no pueden seguirte.</p>
-        <span class="card-link amber">Ver más →</span>
+        <h2 data-es>Kore vs. Competencia</h2>
+        <h2 data-en>Kore vs. Competition</h2>
+        <p data-es>Por qué Kore gana donde Apple, Samsung y otros no pueden seguirte.</p>
+        <p data-en>Why Kore wins where Apple, Samsung and others simply cannot follow.</p>
+        <span class="card-link amber" data-es>Ver más →</span>
+        <span class="card-link amber" data-en>Read more →</span>
       </a>
 
     </div>
 
     <div class="quote-block">
-      <blockquote>
+      <blockquote data-es>
         "No es el más barato. No tiene el ecosistema más grande.<br/>
         Pero es el único que, cuando lo compras, es completamente tuyo."
       </blockquote>
-      <cite class="label">— Manifiesto Kore</cite>
+      <blockquote data-en>
+        "It's not the cheapest. It doesn't have the biggest ecosystem.<br/>
+        But it's the only one that, when you buy it, is completely yours."
+      </blockquote>
+      <cite class="label">— Kore Manifesto</cite>
     </div>
   </main>
 
@@ -117,10 +149,7 @@ import Footer from '../components/Footer.astro';
     color: var(--ivory);
   }
 
-  h1 em {
-    font-style: italic;
-    color: var(--amber);
-  }
+  h1 em { font-style: italic; color: var(--amber); }
 
   .sub {
     font-size: 14px;
@@ -185,24 +214,9 @@ import Footer from '../components/Footer.astro';
   }
 
   .card-num { margin-bottom: 8px; }
-
-  .card h2 {
-    font-size: 26px;
-    color: var(--ivory);
-  }
-
-  .card p {
-    font-size: 11px;
-    color: var(--titanium);
-    line-height: 1.8;
-    flex: 1;
-  }
-
-  .card-link {
-    font-size: 9px;
-    letter-spacing: 0.2em;
-    margin-top: 8px;
-  }
+  .card h2 { font-size: 26px; color: var(--ivory); }
+  .card p { font-size: 11px; color: var(--titanium); line-height: 1.8; flex: 1; }
+  .card-link { font-size: 9px; letter-spacing: 0.2em; margin-top: 8px; }
 
   .quote-block {
     border-left: 2px solid var(--amber);
